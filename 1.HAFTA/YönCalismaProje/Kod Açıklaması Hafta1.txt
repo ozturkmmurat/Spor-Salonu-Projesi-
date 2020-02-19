@@ -1,0 +1,50 @@
+SqlConnection Baglanti kodu ile Sql baðlantýmýzý gerçekleþtiriyoruz 
+InitializeComponent ile Button Textbox vb araçlarýn ekranda görüntülenmesini saðlýyoruz
+
+  private void ÜyeKayit_Load(object sender, EventArgs e)
+        {
+
+            Tablolustur(); Tablolustur Metodunu çaðýrýyoruz
+
+NOT=ÜyeKayit_Load bölümü program açýldýðýnda nelerin yapýlacaðýný belirtiyoruz program açýlýr açýlmaz  Tablolustur metonda yapýlacak iþlemleri gerçekleþtiriyoruz.
+        }
+
+Void Tablolustur()
+Tablolustur adýnda bir metod oluþturuyoruz ve Sql Baðlantýsýný gerçekleþtiriyoruz  Metodun içinde Baglanti.open ile baðlantýmýzý açýk hale getiriyoruz
+SqldataAdapter ile  Veritabanýmýzdaki verilerin Datagridview de listelenmesini istiyoruz 
+Datatable ile tablomuzun içini oluþturuyoruz 
+sqlVericekme.Fill(sqlVerialma);  datagrid_ÜyeBilgileri.DataSource = sqlVerialma;  ile tablonun içinde verilerin listelenmesini istiyoruz
+Baglanti.Close ile veritabaný baðlantýmýzý kapatýyoruz.
+
+
+private void btn_KayitiOlustur_Click
+
+Baglanti.open ile baðlantýmýzý açýyoruz 
+Sqlcommand ile Butona basýlýnca hangi iþlemi gerçekleþtirileceðini yazýyoruz 
+Komut.Parameters.AddWithValue("@Tc", txt_Tc.Text);  ("@Tc", txt_Tc.Text) =  @Tc ile belirttiðimiz kýsýma  txt_Tc.text yazýlan bilgiler @Tc bölümüne kaydedileceðini belirtiyoruz.
+Komut.ExecuteNonQuery(); ile komutun gerçekleþmesini saðlýyoruz Komut yazdýktan sonra eðer bunu yazmaz isek komut iþlemi gerçekleþmez.
+Baglanti.Close ile baðlantýmýzý kapatýyoruz 
+
+
+private void datagrid_ÜyeBilgileri_CellContentClick
+
+txt_Tc.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[0].Value.ToString();
+txt_Ad.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[1].Value.ToString(); BU blöümde Txt.Tc.Text in Datagridview de ilk sütunda gösterileceðini belirityoruz [0] ile txt.Ad.Text in ise
+ikinci satýda gösterileceðini belirtiyoruz index iþlemleri ile ayný þekilde gidiyor Ýlk sütun 1 yerine 0 ile belirtiliyor
+
+
+
+void ListeyiYenileme(string ListeVeri)
+        {
+            SqlDataAdapter Veri_Cekme = new SqlDataAdapter(ListeVeri,Baglanti);  Tablonun içine verilerin getirilmesini saðlýyoruz
+            DataSet ds = new DataSet(); 
+            Veri_Cekme.Fill(ds); Dataset ve Datafiil ile tablonun içini oluþturuyoruz
+            datagrid_ÜyeBilgileri.DataSource = ds.Tables[0];   Tablonun yenilenme iþlemini yapýyoruz.
+        }
+
+
+  private void btn_Yenile_Click(object sender, EventArgs e)
+        {
+            ListeyiYenileme("select * from Yön_CalismaProje"); Butona basýlýnca  ListeyiYenileme Metodunu çaðýrýp select iþleminin Hangi tabloda yapýlacaðýný söylüyoruz  
+
+        }
