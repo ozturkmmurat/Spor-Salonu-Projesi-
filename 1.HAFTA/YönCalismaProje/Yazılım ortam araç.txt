@@ -1,0 +1,17 @@
+public class Ders {
+
+private string ad;
+
+public void sonlandir(){
+this.sonlandir = sonlandir;
+}
+public class Ogrenci extends Ders
+{
+private int no;
+private string adsoyad;
+
+
+public int ortalamahesapla()
+return ortalamahesapla;
+
+}
