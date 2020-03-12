@@ -59,11 +59,11 @@
             this.dateTime_Uyeliksüresibitis = new System.Windows.Forms.DateTimePicker();
             this.lbl_ÜyelikbitişHesapla = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_Üyeliksuresi = new System.Windows.Forms.TextBox();
             this.deneme = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.lbl_baslangic = new System.Windows.Forms.Label();
-            this.lbl_bitis = new System.Windows.Forms.Label();
+            this.label_message = new System.Windows.Forms.Label();
+            this.lbl_usbl = new System.Windows.Forms.Label();
+            this.lbl_usbb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_ÜyeBilgileri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,7 +211,7 @@
             this.datagrid_ÜyeBilgileri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagrid_ÜyeBilgileri.Location = new System.Drawing.Point(28, 345);
             this.datagrid_ÜyeBilgileri.Name = "datagrid_ÜyeBilgileri";
-            this.datagrid_ÜyeBilgileri.Size = new System.Drawing.Size(962, 150);
+            this.datagrid_ÜyeBilgileri.Size = new System.Drawing.Size(942, 148);
             this.datagrid_ÜyeBilgileri.TabIndex = 16;
             this.datagrid_ÜyeBilgileri.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_ÜyeBilgileri_CellContentClick);
             // 
@@ -227,7 +227,7 @@
             // 
             // btn_Yenile
             // 
-            this.btn_Yenile.Location = new System.Drawing.Point(366, 316);
+            this.btn_Yenile.Location = new System.Drawing.Point(369, 316);
             this.btn_Yenile.Name = "btn_Yenile";
             this.btn_Yenile.Size = new System.Drawing.Size(95, 23);
             this.btn_Yenile.TabIndex = 18;
@@ -237,7 +237,7 @@
             // 
             // btn_KayıtSil
             // 
-            this.btn_KayıtSil.Location = new System.Drawing.Point(164, 316);
+            this.btn_KayıtSil.Location = new System.Drawing.Point(167, 316);
             this.btn_KayıtSil.Name = "btn_KayıtSil";
             this.btn_KayıtSil.Size = new System.Drawing.Size(95, 23);
             this.btn_KayıtSil.TabIndex = 19;
@@ -265,7 +265,7 @@
             // 
             // btn_Toplukayıtsil
             // 
-            this.btn_Toplukayıtsil.Location = new System.Drawing.Point(265, 316);
+            this.btn_Toplukayıtsil.Location = new System.Drawing.Point(268, 316);
             this.btn_Toplukayıtsil.Name = "btn_Toplukayıtsil";
             this.btn_Toplukayıtsil.Size = new System.Drawing.Size(95, 23);
             this.btn_Toplukayıtsil.TabIndex = 22;
@@ -275,7 +275,7 @@
             // 
             // btn_Ara
             // 
-            this.btn_Ara.Location = new System.Drawing.Point(467, 316);
+            this.btn_Ara.Location = new System.Drawing.Point(470, 316);
             this.btn_Ara.Name = "btn_Ara";
             this.btn_Ara.Size = new System.Drawing.Size(95, 23);
             this.btn_Ara.TabIndex = 23;
@@ -302,7 +302,7 @@
             // 
             // btn_Üyeliksüresi
             // 
-            this.btn_Üyeliksüresi.Location = new System.Drawing.Point(572, 316);
+            this.btn_Üyeliksüresi.Location = new System.Drawing.Point(575, 316);
             this.btn_Üyeliksüresi.Name = "btn_Üyeliksüresi";
             this.btn_Üyeliksüresi.Size = new System.Drawing.Size(119, 23);
             this.btn_Üyeliksüresi.TabIndex = 26;
@@ -316,7 +316,6 @@
             this.dateTime_Uyelikbaslangıç.Name = "dateTime_Uyelikbaslangıç";
             this.dateTime_Uyelikbaslangıç.Size = new System.Drawing.Size(169, 20);
             this.dateTime_Uyelikbaslangıç.TabIndex = 27;
-            this.dateTime_Uyelikbaslangıç.ValueChanged += new System.EventHandler(this.dateTime_Üyelikbaşlangıç_ValueChanged);
             // 
             // label2
             // 
@@ -334,15 +333,16 @@
             this.dateTime_Uyeliksüresibitis.Name = "dateTime_Uyeliksüresibitis";
             this.dateTime_Uyeliksüresibitis.Size = new System.Drawing.Size(169, 20);
             this.dateTime_Uyeliksüresibitis.TabIndex = 29;
+            this.dateTime_Uyeliksüresibitis.ValueChanged += new System.EventHandler(this.dateTime_Uyeliksüresibitis_ValueChanged);
             // 
             // lbl_ÜyelikbitişHesapla
             // 
             this.lbl_ÜyelikbitişHesapla.AutoSize = true;
-            this.lbl_ÜyelikbitişHesapla.Location = new System.Drawing.Point(558, 258);
+            this.lbl_ÜyelikbitişHesapla.Location = new System.Drawing.Point(482, 144);
             this.lbl_ÜyelikbitişHesapla.Name = "lbl_ÜyelikbitişHesapla";
-            this.lbl_ÜyelikbitişHesapla.Size = new System.Drawing.Size(19, 13);
+            this.lbl_ÜyelikbitişHesapla.Size = new System.Drawing.Size(0, 13);
             this.lbl_ÜyelikbitişHesapla.TabIndex = 10;
-            this.lbl_ÜyelikbitişHesapla.Text = "oo";
+            this.lbl_ÜyelikbitişHesapla.Click += new System.EventHandler(this.lbl_ÜyelikbitişHesapla_Click);
             // 
             // label3
             // 
@@ -354,21 +354,13 @@
             this.label3.TabIndex = 31;
             this.label3.Text = "Üyelik Süresi";
             // 
-            // txt_Üyeliksuresi
-            // 
-            this.txt_Üyeliksuresi.Location = new System.Drawing.Point(485, 136);
-            this.txt_Üyeliksuresi.MaxLength = 1;
-            this.txt_Üyeliksuresi.Name = "txt_Üyeliksuresi";
-            this.txt_Üyeliksuresi.Size = new System.Drawing.Size(100, 20);
-            this.txt_Üyeliksuresi.TabIndex = 32;
-            this.txt_Üyeliksuresi.TextChanged += new System.EventHandler(this.txt_Üyeliksuresi_TextChanged);
-            // 
             // deneme
             // 
             this.deneme.Location = new System.Drawing.Point(467, 183);
             this.deneme.Name = "deneme";
             this.deneme.Size = new System.Drawing.Size(100, 20);
             this.deneme.TabIndex = 33;
+            this.deneme.TextChanged += new System.EventHandler(this.deneme_TextChanged);
             // 
             // button1
             // 
@@ -378,36 +370,42 @@
             this.button1.TabIndex = 34;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lbl_baslangic
+            // label_message
             // 
-            this.lbl_baslangic.AutoSize = true;
-            this.lbl_baslangic.Location = new System.Drawing.Point(802, 89);
-            this.lbl_baslangic.Name = "lbl_baslangic";
-            this.lbl_baslangic.Size = new System.Drawing.Size(35, 13);
-            this.lbl_baslangic.TabIndex = 35;
-            this.lbl_baslangic.Text = "label4";
+            this.label_message.AutoSize = true;
+            this.label_message.Location = new System.Drawing.Point(80, 506);
+            this.label_message.Name = "label_message";
+            this.label_message.Size = new System.Drawing.Size(35, 13);
+            this.label_message.TabIndex = 35;
+            this.label_message.Text = "label4";
             // 
-            // lbl_bitis
+            // lbl_usbl
             // 
-            this.lbl_bitis.AutoSize = true;
-            this.lbl_bitis.Location = new System.Drawing.Point(805, 110);
-            this.lbl_bitis.Name = "lbl_bitis";
-            this.lbl_bitis.Size = new System.Drawing.Size(35, 13);
-            this.lbl_bitis.TabIndex = 36;
-            this.lbl_bitis.Text = "label5";
+            this.lbl_usbl.AutoSize = true;
+            this.lbl_usbl.Location = new System.Drawing.Point(669, 72);
+            this.lbl_usbl.Name = "lbl_usbl";
+            this.lbl_usbl.Size = new System.Drawing.Size(0, 13);
+            this.lbl_usbl.TabIndex = 36;
+            // 
+            // lbl_usbb
+            // 
+            this.lbl_usbb.AutoSize = true;
+            this.lbl_usbb.Location = new System.Drawing.Point(661, 109);
+            this.lbl_usbb.Name = "lbl_usbb";
+            this.lbl_usbb.Size = new System.Drawing.Size(0, 13);
+            this.lbl_usbb.TabIndex = 37;
             // 
             // ÜyeKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 470);
-            this.Controls.Add(this.lbl_bitis);
-            this.Controls.Add(this.lbl_baslangic);
+            this.ClientSize = new System.Drawing.Size(1012, 528);
+            this.Controls.Add(this.lbl_usbb);
+            this.Controls.Add(this.lbl_usbl);
+            this.Controls.Add(this.label_message);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.deneme);
-            this.Controls.Add(this.txt_Üyeliksuresi);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_ÜyelikbitişHesapla);
             this.Controls.Add(this.dateTime_Uyeliksüresibitis);
@@ -458,14 +456,6 @@
         private System.Windows.Forms.Label lbl_Kilo;
         private System.Windows.Forms.Label lbl_Boy;
         private System.Windows.Forms.Label lbl_ÜyelikSüresi;
-        private System.Windows.Forms.TextBox txt_Tc;
-        private System.Windows.Forms.TextBox txt_Ad;
-        private System.Windows.Forms.TextBox txt_Soyad;
-        private System.Windows.Forms.TextBox txt_Yas;
-        private System.Windows.Forms.TextBox txt_Kilo;
-        private System.Windows.Forms.TextBox txt_Boy;
-        private System.Windows.Forms.DateTimePicker dateTime_DogumTarihi;
-        private System.Windows.Forms.DataGridView datagrid_ÜyeBilgileri;
         private System.Windows.Forms.Button btn_KayitiOlustur;
         private System.Windows.Forms.Button btn_Yenile;
         private System.Windows.Forms.Button btn_KayıtSil;
@@ -476,16 +466,24 @@
         private System.Windows.Forms.TextBox txt_KayıtAra;
         private System.Windows.Forms.Label lbl_Kayıtara;
         private System.Windows.Forms.Button btn_Üyeliksüresi;
-        private System.Windows.Forms.DateTimePicker dateTime_Uyelikbaslangıç;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTime_Uyeliksüresibitis;
         private System.Windows.Forms.Label lbl_ÜyelikbitişHesapla;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_Üyeliksuresi;
         private System.Windows.Forms.TextBox deneme;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label lbl_baslangic;
-        private System.Windows.Forms.Label lbl_bitis;
+        private System.Windows.Forms.Label label_message;
+        private System.Windows.Forms.Label lbl_usbl;
+        private System.Windows.Forms.Label lbl_usbb;
+        public System.Windows.Forms.TextBox txt_Tc;
+        public System.Windows.Forms.TextBox txt_Ad;
+        public System.Windows.Forms.TextBox txt_Soyad;
+        public System.Windows.Forms.TextBox txt_Yas;
+        public System.Windows.Forms.TextBox txt_Kilo;
+        public System.Windows.Forms.TextBox txt_Boy;
+        public System.Windows.Forms.DateTimePicker dateTime_DogumTarihi;
+        public System.Windows.Forms.DataGridView datagrid_ÜyeBilgileri;
+        public System.Windows.Forms.DateTimePicker dateTime_Uyelikbaslangıç;
+        public System.Windows.Forms.DateTimePicker dateTime_Uyeliksüresibitis;
     }
 }
 
