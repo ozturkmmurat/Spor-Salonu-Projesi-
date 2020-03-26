@@ -59,11 +59,10 @@
             this.dateTime_Uyeliksüresibitis = new System.Windows.Forms.DateTimePicker();
             this.lbl_ÜyelikbitişHesapla = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.deneme = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label_message = new System.Windows.Forms.Label();
             this.lbl_usbl = new System.Windows.Forms.Label();
             this.lbl_usbb = new System.Windows.Forms.Label();
+            this.btn_Güncelle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_ÜyeBilgileri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,6 +152,7 @@
             this.txt_Tc.Name = "txt_Tc";
             this.txt_Tc.Size = new System.Drawing.Size(100, 20);
             this.txt_Tc.TabIndex = 8;
+            this.txt_Tc.TextChanged += new System.EventHandler(this.txt_Tc_TextChanged);
             this.txt_Tc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Tc_KeyPress);
             // 
             // txt_Ad
@@ -179,7 +179,8 @@
             this.txt_Yas.Name = "txt_Yas";
             this.txt_Yas.Size = new System.Drawing.Size(100, 20);
             this.txt_Yas.TabIndex = 11;
-            this.txt_Yas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Boy_KeyPress);
+            this.txt_Yas.TextChanged += new System.EventHandler(this.txt_Yas_TextChanged);
+            this.txt_Yas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Yas_KeyPress);
             // 
             // txt_Kilo
             // 
@@ -187,6 +188,7 @@
             this.txt_Kilo.Name = "txt_Kilo";
             this.txt_Kilo.Size = new System.Drawing.Size(100, 20);
             this.txt_Kilo.TabIndex = 12;
+            this.txt_Kilo.TextChanged += new System.EventHandler(this.txt_Kilo_TextChanged);
             this.txt_Kilo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Boy_KeyPress);
             // 
             // txt_Boy
@@ -195,6 +197,7 @@
             this.txt_Boy.Name = "txt_Boy";
             this.txt_Boy.Size = new System.Drawing.Size(100, 20);
             this.txt_Boy.TabIndex = 13;
+            this.txt_Boy.TextChanged += new System.EventHandler(this.txt_Boy_TextChanged);
             this.txt_Boy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Boy_KeyPress);
             // 
             // dateTime_DogumTarihi
@@ -203,7 +206,6 @@
             this.dateTime_DogumTarihi.Name = "dateTime_DogumTarihi";
             this.dateTime_DogumTarihi.Size = new System.Drawing.Size(169, 20);
             this.dateTime_DogumTarihi.TabIndex = 15;
-            this.dateTime_DogumTarihi.ValueChanged += new System.EventHandler(this.dateTime_DogumTarihi_ValueChanged);
             // 
             // datagrid_ÜyeBilgileri
             // 
@@ -251,6 +253,7 @@
             this.txt_Kayıtsil.Name = "txt_Kayıtsil";
             this.txt_Kayıtsil.Size = new System.Drawing.Size(100, 20);
             this.txt_Kayıtsil.TabIndex = 21;
+            this.txt_Kayıtsil.TextChanged += new System.EventHandler(this.txt_Kayıtsil_TextChanged);
             this.txt_Kayıtsil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Kayıtsil_KeyPress);
             // 
             // label1
@@ -289,6 +292,7 @@
             this.txt_KayıtAra.Name = "txt_KayıtAra";
             this.txt_KayıtAra.Size = new System.Drawing.Size(100, 20);
             this.txt_KayıtAra.TabIndex = 25;
+            this.txt_KayıtAra.TextChanged += new System.EventHandler(this.txt_KayıtAra_TextChanged);
             // 
             // lbl_Kayıtara
             // 
@@ -342,7 +346,6 @@
             this.lbl_ÜyelikbitişHesapla.Name = "lbl_ÜyelikbitişHesapla";
             this.lbl_ÜyelikbitişHesapla.Size = new System.Drawing.Size(0, 13);
             this.lbl_ÜyelikbitişHesapla.TabIndex = 10;
-            this.lbl_ÜyelikbitişHesapla.Click += new System.EventHandler(this.lbl_ÜyelikbitişHesapla_Click);
             // 
             // label3
             // 
@@ -353,23 +356,6 @@
             this.label3.Size = new System.Drawing.Size(114, 22);
             this.label3.TabIndex = 31;
             this.label3.Text = "Üyelik Süresi";
-            // 
-            // deneme
-            // 
-            this.deneme.Location = new System.Drawing.Point(467, 183);
-            this.deneme.Name = "deneme";
-            this.deneme.Size = new System.Drawing.Size(100, 20);
-            this.deneme.TabIndex = 33;
-            this.deneme.TextChanged += new System.EventHandler(this.deneme_TextChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(598, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label_message
             // 
@@ -396,16 +382,25 @@
             this.lbl_usbb.Size = new System.Drawing.Size(0, 13);
             this.lbl_usbb.TabIndex = 37;
             // 
+            // btn_Güncelle
+            // 
+            this.btn_Güncelle.Location = new System.Drawing.Point(700, 316);
+            this.btn_Güncelle.Name = "btn_Güncelle";
+            this.btn_Güncelle.Size = new System.Drawing.Size(95, 23);
+            this.btn_Güncelle.TabIndex = 38;
+            this.btn_Güncelle.Text = "Güncelle";
+            this.btn_Güncelle.UseVisualStyleBackColor = true;
+            this.btn_Güncelle.Click += new System.EventHandler(this.btn_Güncelle_Click);
+            // 
             // ÜyeKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 528);
+            this.Controls.Add(this.btn_Güncelle);
             this.Controls.Add(this.lbl_usbb);
             this.Controls.Add(this.lbl_usbl);
             this.Controls.Add(this.label_message);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.deneme);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_ÜyelikbitişHesapla);
             this.Controls.Add(this.dateTime_Uyeliksüresibitis);
@@ -469,8 +464,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_ÜyelikbitişHesapla;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox deneme;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label_message;
         private System.Windows.Forms.Label lbl_usbl;
         private System.Windows.Forms.Label lbl_usbb;
@@ -484,6 +477,7 @@
         public System.Windows.Forms.DataGridView datagrid_ÜyeBilgileri;
         public System.Windows.Forms.DateTimePicker dateTime_Uyelikbaslangıç;
         public System.Windows.Forms.DateTimePicker dateTime_Uyeliksüresibitis;
+        private System.Windows.Forms.Button btn_Güncelle;
     }
 }
 

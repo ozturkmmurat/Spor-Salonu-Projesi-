@@ -27,10 +27,10 @@ namespace YönCalismaProje
             while (VerileriOku.Read())
             {
                 chart_Olcumistatistik.Series["Kilo"].Points.AddXY(VerileriOku[1].ToString(),VerileriOku[0]);
-                //chart_Olcumistatistik.Series["Su_Orani"].Points.AddXY(VerileriOku[2].ToString(),VerileriOku[0]);
-                //chart_Olcumistatistik.Series["Kas_Orani"].Points.AddXY(VerileriOku[3].ToString(),VerileriOku[0]);
-                //chart_Olcumistatistik.Series["Yag_Orani"].Points.AddXY(VerileriOku[4].ToString(),VerileriOku[0]);
- 
+                chart_Olcumistatistik.Series["Su_Orani"].Points.AddXY(VerileriOku[2].ToString(), VerileriOku[0]);
+                chart_Olcumistatistik.Series["Kas_Orani"].Points.AddXY(VerileriOku[3].ToString(), VerileriOku[0]);
+                chart_Olcumistatistik.Series["Yag_Orani"].Points.AddXY(VerileriOku[4].ToString(), VerileriOku[0]);
+
             }
 
             Baglanti.Close();

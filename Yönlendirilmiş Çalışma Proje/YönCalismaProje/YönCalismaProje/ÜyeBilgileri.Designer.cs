@@ -67,6 +67,8 @@
             this.lbl_Programsurehesapla = new System.Windows.Forms.Label();
             this.lbl_Blgid = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
+            this.lbl_usbb = new System.Windows.Forms.Label();
+            this.lbl_usbts = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Ölcüm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Program)).BeginInit();
             this.SuspendLayout();
@@ -128,9 +130,8 @@
             this.lbl_Blgsoyad.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_Blgsoyad.Location = new System.Drawing.Point(126, 37);
             this.lbl_Blgsoyad.Name = "lbl_Blgsoyad";
-            this.lbl_Blgsoyad.Size = new System.Drawing.Size(60, 22);
+            this.lbl_Blgsoyad.Size = new System.Drawing.Size(0, 22);
             this.lbl_Blgsoyad.TabIndex = 8;
-            this.lbl_Blgsoyad.Text = "Soyad";
             // 
             // lbl_Blgad
             // 
@@ -147,9 +148,8 @@
             this.lbl_Blgüyeliksüresibaslangıc.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_Blgüyeliksüresibaslangıc.Location = new System.Drawing.Point(450, 6);
             this.lbl_Blgüyeliksüresibaslangıc.Name = "lbl_Blgüyeliksüresibaslangıc";
-            this.lbl_Blgüyeliksüresibaslangıc.Size = new System.Drawing.Size(195, 22);
+            this.lbl_Blgüyeliksüresibaslangıc.Size = new System.Drawing.Size(0, 22);
             this.lbl_Blgüyeliksüresibaslangıc.TabIndex = 11;
-            this.lbl_Blgüyeliksüresibaslangıc.Text = "Üyelik Süresi Başlangıç";
             // 
             // lbl_Üyeliksüresibaslangic
             // 
@@ -168,9 +168,8 @@
             this.lbl_Blgüyeliksüresibitis.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_Blgüyeliksüresibitis.Location = new System.Drawing.Point(450, 37);
             this.lbl_Blgüyeliksüresibitis.Name = "lbl_Blgüyeliksüresibitis";
-            this.lbl_Blgüyeliksüresibitis.Size = new System.Drawing.Size(155, 22);
+            this.lbl_Blgüyeliksüresibitis.Size = new System.Drawing.Size(0, 22);
             this.lbl_Blgüyeliksüresibitis.TabIndex = 13;
-            this.lbl_Blgüyeliksüresibitis.Text = "Üyelik Süresi Bitiş";
             // 
             // lbl_Üyeliksüresibitis
             // 
@@ -266,6 +265,7 @@
             this.txt_Blgsu.Name = "txt_Blgsu";
             this.txt_Blgsu.Size = new System.Drawing.Size(100, 20);
             this.txt_Blgsu.TabIndex = 25;
+            this.txt_Blgsu.TextChanged += new System.EventHandler(this.txt_Blgsu_TextChanged);
             this.txt_Blgsu.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Blgyagorani_KeyPress);
             // 
             // txt_Kasoranı
@@ -274,6 +274,7 @@
             this.txt_Kasoranı.Name = "txt_Kasoranı";
             this.txt_Kasoranı.Size = new System.Drawing.Size(100, 20);
             this.txt_Kasoranı.TabIndex = 26;
+            this.txt_Kasoranı.TextChanged += new System.EventHandler(this.txt_Kasoranı_TextChanged);
             this.txt_Kasoranı.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Blgyagorani_KeyPress);
             // 
             // txt_Blgyagorani
@@ -282,6 +283,7 @@
             this.txt_Blgyagorani.Name = "txt_Blgyagorani";
             this.txt_Blgyagorani.Size = new System.Drawing.Size(100, 20);
             this.txt_Blgyagorani.TabIndex = 27;
+            this.txt_Blgyagorani.TextChanged += new System.EventHandler(this.txt_Blgyagorani_TextChanged);
             this.txt_Blgyagorani.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Blgyagorani_KeyPress);
             // 
             // txt_BlgYas
@@ -291,7 +293,7 @@
             this.txt_BlgYas.Size = new System.Drawing.Size(100, 20);
             this.txt_BlgYas.TabIndex = 28;
             this.txt_BlgYas.TextChanged += new System.EventHandler(this.txt_BlgYas_TextChanged);
-            this.txt_BlgYas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Blgboy_KeyPress);
+            this.txt_BlgYas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_BlgYas_KeyPress);
             // 
             // txt_Blgkilo
             // 
@@ -347,7 +349,6 @@
             this.dateTime_Programbaslangic.Name = "dateTime_Programbaslangic";
             this.dateTime_Programbaslangic.Size = new System.Drawing.Size(200, 20);
             this.dateTime_Programbaslangic.TabIndex = 34;
-            this.dateTime_Programbaslangic.ValueChanged += new System.EventHandler(this.dateTime_Programbaslangic_ValueChanged);
             // 
             // dateTime_Programbitis
             // 
@@ -415,7 +416,7 @@
             // 
             this.lbl_Programsurehesapla.AutoSize = true;
             this.lbl_Programsurehesapla.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Programsurehesapla.Location = new System.Drawing.Point(575, 191);
+            this.lbl_Programsurehesapla.Location = new System.Drawing.Point(599, 182);
             this.lbl_Programsurehesapla.Name = "lbl_Programsurehesapla";
             this.lbl_Programsurehesapla.Size = new System.Drawing.Size(46, 22);
             this.lbl_Programsurehesapla.TabIndex = 36;
@@ -442,11 +443,31 @@
             this.lbl_id.TabIndex = 44;
             this.lbl_id.Text = "İd";
             // 
+            // lbl_usbb
+            // 
+            this.lbl_usbb.AutoSize = true;
+            this.lbl_usbb.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_usbb.Location = new System.Drawing.Point(805, 104);
+            this.lbl_usbb.Name = "lbl_usbb";
+            this.lbl_usbb.Size = new System.Drawing.Size(0, 22);
+            this.lbl_usbb.TabIndex = 45;
+            // 
+            // lbl_usbts
+            // 
+            this.lbl_usbts.AutoSize = true;
+            this.lbl_usbts.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_usbts.Location = new System.Drawing.Point(805, 169);
+            this.lbl_usbts.Name = "lbl_usbts";
+            this.lbl_usbts.Size = new System.Drawing.Size(0, 22);
+            this.lbl_usbts.TabIndex = 46;
+            // 
             // ÜyeBilgileri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 462);
+            this.Controls.Add(this.lbl_usbts);
+            this.Controls.Add(this.lbl_usbb);
             this.Controls.Add(this.lbl_id);
             this.Controls.Add(this.lbl_Blgid);
             this.Controls.Add(this.button2);
@@ -537,5 +558,7 @@
         public System.Windows.Forms.Label lbl_Blgid;
         public System.Windows.Forms.DataGridView dataGrid_Ölcüm;
         public System.Windows.Forms.DataGridView dataGrid_Program;
+        private System.Windows.Forms.Label lbl_usbb;
+        private System.Windows.Forms.Label lbl_usbts;
     }
 }

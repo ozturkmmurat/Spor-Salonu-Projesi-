@@ -48,6 +48,7 @@
             this.chart_Olcumistatistik.Name = "chart_Olcumistatistik";
             this.chart_Olcumistatistik.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
+            series1.IsValueShownAsLabel = true;
             series1.Legend = "Legend1";
             series1.Name = "Kilo";
             series2.ChartArea = "ChartArea1";
