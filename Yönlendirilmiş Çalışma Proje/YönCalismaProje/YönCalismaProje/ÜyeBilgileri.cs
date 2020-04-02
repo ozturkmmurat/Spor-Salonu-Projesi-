@@ -18,6 +18,7 @@ namespace YönCalismaProje
         {
             InitializeComponent();
         }
+      
         void Tablolustur2()
         {
             SqlConnection Baglantim = new SqlConnection("Data Source = localhost; Initial Catalog = Yon_Calismaproje; Integrated Security = True");
@@ -47,11 +48,17 @@ namespace YönCalismaProje
 
         private void ÜyeBilgileri_Load(object sender, EventArgs e)
         {
+
             lbl_usbb.Text = dateTime_Programbaslangic.Value.ToString();
             lbl_usbts.Text = dateTime_Programbitis.Value.ToString();
             Tablolustur2();
             Tablolustur3();
+            
+
+
         }
+
+   
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -82,24 +89,39 @@ namespace YönCalismaProje
                 string date1 = dateTime_Programbaslangic.Value.ToString();
                 string date2 = dateTime_Programbitis.Value.ToString();
 
-            
-                SqlCommand komut2;
-
-
-
-                foreach (string program in List_Sporprogrami.Items)
+                string sporProgrami = "";
+                string beslenmeProgrami = "";
+                int i = 0;
+                foreach (string deneme in List_Sporprogrami.Items)
                 {
+                    sporProgrami += List_Sporprogrami.Items[i] + ",";
+                    i++;
+                }
+                int x = 0;
+                foreach (string deneme in List_Beslenmeprogrami.Items)
+                {
+                    beslenmeProgrami += List_Beslenmeprogrami.Items[x] + ",";
+                    x++;
+                }
+
+                SqlCommand komut2;
+                string beslenmeDeneme;
+                beslenmeDeneme = List_Beslenmeprogrami.Items.ToString();
+
+
+               
                     komut2 = new SqlCommand(sql, Baglantim);
                     komut2.Parameters.AddWithValue("Program_Baslangic", date1);
                     komut2.Parameters.AddWithValue("Program_Bitis", date2);
                     komut2.Parameters.AddWithValue("@Program_Kalansure", lbl_Programsurehesapla.Text);
                     komut2.Parameters.AddWithValue("@No", lbl_Blgid.Text);
-                    komut2.Parameters.AddWithValue("@Yapilacak_Hareketler", program);
-                    komut2.Parameters.AddWithValue("@Beslenme_Programi", program);
+                    komut2.Parameters.AddWithValue("@Yapilacak_Hareketler", sporProgrami);
+                    komut2.Parameters.AddWithValue("@Beslenme_Programi", beslenmeProgrami);
                     Baglantim.Open();
                     komut2.ExecuteNonQuery();
                     Baglantim.Close();
-                }
+                    i = 0;
+                
                 MessageBox.Show("Kayıt Eklendi");
             }
             else
@@ -133,7 +155,7 @@ namespace YönCalismaProje
 
         private void btn_Sporprog_Click(object sender, EventArgs e)
         {
-            if (txt_Sporekle.Text == "")
+            if (txt_Sporekle.Text == "" || txt_Sporekle.Text == null)
             {
                 MessageBox.Show("Spor programı listesine boş bilgi ekleyemezsiniz !", "Uyarı");
             }
@@ -146,7 +168,7 @@ namespace YönCalismaProje
 
         private void btn_Beslenmeprog_Click(object sender, EventArgs e)
         {
-            if(txt_Beslenmeekle.Text == "")
+            if(txt_Beslenmeekle.Text == "" || txt_Beslenmeekle.Text == null)
             {
                 MessageBox.Show("Beslenme programı listesine boş bilgi ekleyemezsiniz !", "Uyarı");
             }
@@ -231,14 +253,21 @@ namespace YönCalismaProje
             SqlDataAdapter Veri_Cekme = new SqlDataAdapter(ListeVeri, Baglantim);
             DataSet ds = new DataSet();
             Veri_Cekme.Fill(ds);
-            dataGrid_Program.DataSource = ds.Tables[0];
             dataGrid_Ölcüm.DataSource = ds.Tables[0];
             
         }
+        void Yenile2(String ListeVeri)
+        {
+            SqlDataAdapter Veri_Cekme = new SqlDataAdapter(ListeVeri, Baglantim);
+            DataSet ds = new DataSet();
+            Veri_Cekme.Fill(ds);
+            dataGrid_Program.DataSource = ds.Tables[0];
+        }
         private void btn_Datagridyenile_Click(object sender, EventArgs e)
         {
-            Yenile("SELECT * from Hareket_Beslenme where Hareket_Beslenme.No like '" + lbl_Blgid.Text + "%'");
             Yenile("SELECT * from Program_Bilgileri where Program_Bilgileri.No like '" + lbl_Blgid.Text + "%'");
+            Yenile2("SELECT * from Hareket_Beslenme where Hareket_Beslenme.No like '" + lbl_Blgid.Text + "%'");
+         
         }
 
         void SecerekSil(int Kullanici_İd){
@@ -368,5 +397,21 @@ namespace YönCalismaProje
             }
 
          }
+
+        private void btn_Güncelle_Click(object sender, EventArgs e)
+        {
+
+            Baglantim.Open();
+            //txt_Blgboy.Text = dataGrid_Ölcüm.CurrentRow.Cells["Boy"].Value.ToString();
+            //txt_Blgsu.Text = dataGrid_Ölcüm.CurrentRow.Cells["Su_Orani"].Value.ToString();
+            //txt_Kasoranı.Text = dataGrid_Ölcüm.CurrentRow.Cells["Kas_Orani"].Value.ToString();
+            //txt_Blgyagorani.Text = dataGrid_Ölcüm.CurrentRow.Cells["Yag_Orani"].Value.ToString();
+
+
+            SqlCommand GüncelleKomut = new SqlCommand("update Program_Bilgileri set Program_Baslangic='" + dataGrid_Ölcüm.CurrentRow.Cells[1].Value.ToString() + "' ,Program_Bitis='" + dataGrid_Ölcüm.CurrentRow.Cells[2].Value.ToString() + "', Program_KalanSure='" + dataGrid_Ölcüm.CurrentRow.Cells[3].Value.ToString() + "' ,Kilo='" + dataGrid_Ölcüm.CurrentRow.Cells[4].Value.ToString() + "'  ,Boy='" + dataGrid_Ölcüm.CurrentRow.Cells[5].Value.ToString() + "',Su_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[6].Value.ToString() + "',Kas_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[7].Value.ToString() + "' ,Yag_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[8].Value.ToString() +  "'where No = '" + dataGrid_Ölcüm.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
+            GüncelleKomut.ExecuteNonQuery();
+            Baglantim.Close();
+
+        }
     }
 }

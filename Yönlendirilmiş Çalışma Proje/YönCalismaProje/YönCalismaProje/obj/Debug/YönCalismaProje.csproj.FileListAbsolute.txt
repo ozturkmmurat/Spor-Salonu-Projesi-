@@ -16,14 +16,16 @@ C:\Users\Batuhan\Desktop\YönlendirilmİŞ Çalışma Proje\1.HAFTA\YönCalismaP
 C:\Users\Batuhan\Desktop\YönlendirilmİŞ Çalışma Proje\1.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.csproj.GenerateResource.Cache
 C:\Users\Batuhan\Desktop\YönlendirilmİŞ Çalışma Proje\1.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.exe
 C:\Users\Batuhan\Desktop\YönlendirilmİŞ Çalışma Proje\1.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.pdb
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.exe.config
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.exe
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.pdb
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.csprojResolveAssemblyReference.cache
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.Properties.Resources.resources
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.ÜyeKayit.resources
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.csproj.GenerateResource.Cache
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.exe
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.pdb
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.GirisSayfasi.resources
-C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\2.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.YoneticiOlustur.resources
+C:\Users\Batuhan\Documents\Visual Studio 2017\Projects\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.ÜyeBilgileri.resources
+C:\Users\Batuhan\Documents\Visual Studio 2017\Projects\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.Olcumİstatistik.resources
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.exe.config
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.exe
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.csprojResolveAssemblyReference.cache
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.Olcumİstatistik.resources
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.Properties.Resources.resources
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.ÜyeBilgileri.resources
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.ÜyeKayit.resources
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.csproj.GenerateResource.Cache
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.exe
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.pdb
+C:\Users\Batuhan\Desktop\Visual Studio\YönlendirilmİŞ Çalışma Proje\8.HAFTA\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.pdb

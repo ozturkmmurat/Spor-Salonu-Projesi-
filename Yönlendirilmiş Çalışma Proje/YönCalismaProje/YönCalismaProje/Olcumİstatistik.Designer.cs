@@ -44,7 +44,7 @@
             this.chart_Olcumistatistik.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart_Olcumistatistik.Legends.Add(legend1);
-            this.chart_Olcumistatistik.Location = new System.Drawing.Point(140, 32);
+            this.chart_Olcumistatistik.Location = new System.Drawing.Point(157, 38);
             this.chart_Olcumistatistik.Name = "chart_Olcumistatistik";
             this.chart_Olcumistatistik.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
