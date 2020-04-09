@@ -16,7 +16,7 @@ namespace YönCalismaProje
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ÜyeKayit());
+            Application.Run(new Menu());
         }
     }
 }

@@ -54,23 +54,23 @@
             this.txt_BlgYas = new System.Windows.Forms.TextBox();
             this.txt_Blgkilo = new System.Windows.Forms.TextBox();
             this.txt_Blgboy = new System.Windows.Forms.TextBox();
-            this.btn_Sporprog = new System.Windows.Forms.Button();
-            this.btn_Beslenmeprog = new System.Windows.Forms.Button();
-            this.btn_Olustur = new System.Windows.Forms.Button();
             this.dateTime_Programbaslangic = new System.Windows.Forms.DateTimePicker();
             this.dateTime_Programbitis = new System.Windows.Forms.DateTimePicker();
             this.txt_Sporekle = new System.Windows.Forms.TextBox();
             this.txt_Beslenmeekle = new System.Windows.Forms.TextBox();
             this.dataGrid_Program = new System.Windows.Forms.DataGridView();
-            this.btn_Ölcüm = new System.Windows.Forms.Button();
-            this.btn_Datagridyenile = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.lbl_Programsurehesapla = new System.Windows.Forms.Label();
             this.lbl_Blgid = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
             this.lbl_usbb = new System.Windows.Forms.Label();
             this.lbl_usbts = new System.Windows.Forms.Label();
             this.btn_Güncelle = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Datagridyenile = new System.Windows.Forms.Button();
+            this.btn_Ölcüm = new System.Windows.Forms.Button();
+            this.btn_Olustur = new System.Windows.Forms.Button();
+            this.btn_Beslenmeprog = new System.Windows.Forms.Button();
+            this.btn_Sporprog = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Ölcüm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Program)).BeginInit();
             this.SuspendLayout();
@@ -316,48 +316,6 @@
             this.txt_Blgboy.TextChanged += new System.EventHandler(this.txt_Blgboy_TextChanged);
             this.txt_Blgboy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Blgboy_KeyPress);
             // 
-            // btn_Sporprog
-            // 
-            this.btn_Sporprog.BackColor = System.Drawing.Color.White;
-            this.btn_Sporprog.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sporprog.Image")));
-            this.btn_Sporprog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sporprog.Location = new System.Drawing.Point(13, 169);
-            this.btn_Sporprog.Name = "btn_Sporprog";
-            this.btn_Sporprog.Size = new System.Drawing.Size(131, 27);
-            this.btn_Sporprog.TabIndex = 31;
-            this.btn_Sporprog.Text = "Spor Programı";
-            this.btn_Sporprog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Sporprog.UseVisualStyleBackColor = false;
-            this.btn_Sporprog.Click += new System.EventHandler(this.btn_Sporprog_Click);
-            // 
-            // btn_Beslenmeprog
-            // 
-            this.btn_Beslenmeprog.BackColor = System.Drawing.Color.White;
-            this.btn_Beslenmeprog.Image = ((System.Drawing.Image)(resources.GetObject("btn_Beslenmeprog.Image")));
-            this.btn_Beslenmeprog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Beslenmeprog.Location = new System.Drawing.Point(12, 202);
-            this.btn_Beslenmeprog.Name = "btn_Beslenmeprog";
-            this.btn_Beslenmeprog.Size = new System.Drawing.Size(132, 24);
-            this.btn_Beslenmeprog.TabIndex = 32;
-            this.btn_Beslenmeprog.Text = "Beslenme Programı";
-            this.btn_Beslenmeprog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Beslenmeprog.UseVisualStyleBackColor = false;
-            this.btn_Beslenmeprog.Click += new System.EventHandler(this.btn_Beslenmeprog_Click);
-            // 
-            // btn_Olustur
-            // 
-            this.btn_Olustur.BackColor = System.Drawing.Color.White;
-            this.btn_Olustur.Image = ((System.Drawing.Image)(resources.GetObject("btn_Olustur.Image")));
-            this.btn_Olustur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Olustur.Location = new System.Drawing.Point(357, 224);
-            this.btn_Olustur.Name = "btn_Olustur";
-            this.btn_Olustur.Size = new System.Drawing.Size(125, 30);
-            this.btn_Olustur.TabIndex = 33;
-            this.btn_Olustur.Text = "Programı Oluştur";
-            this.btn_Olustur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Olustur.UseVisualStyleBackColor = false;
-            this.btn_Olustur.Click += new System.EventHandler(this.btn_Olustur_Click);
-            // 
             // dateTime_Programbaslangic
             // 
             this.dateTime_Programbaslangic.Location = new System.Drawing.Point(357, 169);
@@ -397,49 +355,7 @@
             this.dataGrid_Program.Name = "dataGrid_Program";
             this.dataGrid_Program.Size = new System.Drawing.Size(331, 199);
             this.dataGrid_Program.TabIndex = 39;
-            // 
-            // btn_Ölcüm
-            // 
-            this.btn_Ölcüm.BackColor = System.Drawing.Color.White;
-            this.btn_Ölcüm.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ölcüm.Image")));
-            this.btn_Ölcüm.Location = new System.Drawing.Point(694, 224);
-            this.btn_Ölcüm.Name = "btn_Ölcüm";
-            this.btn_Ölcüm.Size = new System.Drawing.Size(125, 30);
-            this.btn_Ölcüm.TabIndex = 40;
-            this.btn_Ölcüm.Text = "Ölçüm Oluştur";
-            this.btn_Ölcüm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Ölcüm.UseVisualStyleBackColor = false;
-            this.btn_Ölcüm.Click += new System.EventHandler(this.btn_Ölcüm_Click);
-            // 
-            // btn_Datagridyenile
-            // 
-            this.btn_Datagridyenile.BackColor = System.Drawing.Color.White;
-            this.btn_Datagridyenile.Image = ((System.Drawing.Image)(resources.GetObject("btn_Datagridyenile.Image")));
-            this.btn_Datagridyenile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Datagridyenile.Location = new System.Drawing.Point(568, 68);
-            this.btn_Datagridyenile.Name = "btn_Datagridyenile";
-            this.btn_Datagridyenile.Size = new System.Drawing.Size(95, 28);
-            this.btn_Datagridyenile.TabIndex = 41;
-            this.btn_Datagridyenile.Text = "Yenile";
-            this.btn_Datagridyenile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Datagridyenile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Datagridyenile.UseVisualStyleBackColor = false;
-            this.btn_Datagridyenile.Click += new System.EventHandler(this.btn_Datagridyenile_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(568, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 28);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Sil";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.dataGrid_Program.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_Program_CellContentClick);
             // 
             // lbl_Programsurehesapla
             // 
@@ -504,6 +420,91 @@
             this.btn_Güncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Güncelle.UseVisualStyleBackColor = false;
             this.btn_Güncelle.Click += new System.EventHandler(this.btn_Güncelle_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(568, 99);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 28);
+            this.button2.TabIndex = 42;
+            this.button2.Text = "Sil";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn_Datagridyenile
+            // 
+            this.btn_Datagridyenile.BackColor = System.Drawing.Color.White;
+            this.btn_Datagridyenile.Image = ((System.Drawing.Image)(resources.GetObject("btn_Datagridyenile.Image")));
+            this.btn_Datagridyenile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Datagridyenile.Location = new System.Drawing.Point(568, 68);
+            this.btn_Datagridyenile.Name = "btn_Datagridyenile";
+            this.btn_Datagridyenile.Size = new System.Drawing.Size(95, 28);
+            this.btn_Datagridyenile.TabIndex = 41;
+            this.btn_Datagridyenile.Text = "Yenile";
+            this.btn_Datagridyenile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Datagridyenile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Datagridyenile.UseVisualStyleBackColor = false;
+            this.btn_Datagridyenile.Click += new System.EventHandler(this.btn_Datagridyenile_Click);
+            // 
+            // btn_Ölcüm
+            // 
+            this.btn_Ölcüm.BackColor = System.Drawing.Color.White;
+            this.btn_Ölcüm.Image = ((System.Drawing.Image)(resources.GetObject("btn_Ölcüm.Image")));
+            this.btn_Ölcüm.Location = new System.Drawing.Point(694, 224);
+            this.btn_Ölcüm.Name = "btn_Ölcüm";
+            this.btn_Ölcüm.Size = new System.Drawing.Size(125, 30);
+            this.btn_Ölcüm.TabIndex = 40;
+            this.btn_Ölcüm.Text = "Ölçüm Oluştur";
+            this.btn_Ölcüm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Ölcüm.UseVisualStyleBackColor = false;
+            this.btn_Ölcüm.Click += new System.EventHandler(this.btn_Ölcüm_Click);
+            // 
+            // btn_Olustur
+            // 
+            this.btn_Olustur.BackColor = System.Drawing.Color.White;
+            this.btn_Olustur.Image = ((System.Drawing.Image)(resources.GetObject("btn_Olustur.Image")));
+            this.btn_Olustur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Olustur.Location = new System.Drawing.Point(357, 224);
+            this.btn_Olustur.Name = "btn_Olustur";
+            this.btn_Olustur.Size = new System.Drawing.Size(125, 30);
+            this.btn_Olustur.TabIndex = 33;
+            this.btn_Olustur.Text = "Programı Oluştur";
+            this.btn_Olustur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Olustur.UseVisualStyleBackColor = false;
+            this.btn_Olustur.Click += new System.EventHandler(this.btn_Olustur_Click);
+            // 
+            // btn_Beslenmeprog
+            // 
+            this.btn_Beslenmeprog.BackColor = System.Drawing.Color.White;
+            this.btn_Beslenmeprog.Image = ((System.Drawing.Image)(resources.GetObject("btn_Beslenmeprog.Image")));
+            this.btn_Beslenmeprog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Beslenmeprog.Location = new System.Drawing.Point(12, 202);
+            this.btn_Beslenmeprog.Name = "btn_Beslenmeprog";
+            this.btn_Beslenmeprog.Size = new System.Drawing.Size(132, 24);
+            this.btn_Beslenmeprog.TabIndex = 32;
+            this.btn_Beslenmeprog.Text = "Beslenme Programı";
+            this.btn_Beslenmeprog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Beslenmeprog.UseVisualStyleBackColor = false;
+            this.btn_Beslenmeprog.Click += new System.EventHandler(this.btn_Beslenmeprog_Click);
+            // 
+            // btn_Sporprog
+            // 
+            this.btn_Sporprog.BackColor = System.Drawing.Color.White;
+            this.btn_Sporprog.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sporprog.Image")));
+            this.btn_Sporprog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Sporprog.Location = new System.Drawing.Point(13, 169);
+            this.btn_Sporprog.Name = "btn_Sporprog";
+            this.btn_Sporprog.Size = new System.Drawing.Size(131, 27);
+            this.btn_Sporprog.TabIndex = 31;
+            this.btn_Sporprog.Text = "Spor Programı";
+            this.btn_Sporprog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Sporprog.UseVisualStyleBackColor = false;
+            this.btn_Sporprog.Click += new System.EventHandler(this.btn_Sporprog_Click);
             // 
             // ÜyeBilgileri
             // 

@@ -46,11 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeslenmeProgramı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeslenmeProgramı.Designer.cs">
+      <DependentUpon>BeslenmeProgramı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeslenmeProgramıOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeslenmeProgramıOlustur.Designer.cs">
+      <DependentUpon>BeslenmeProgramıOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlcumOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlcumOlustur.Designer.cs">
+      <DependentUpon>OlcumOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlcumSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlcumSayfasi.Designer.cs">
+      <DependentUpon>OlcumSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Olcumİstatistik.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Olcumİstatistik.Designer.cs">
       <DependentUpon>Olcumİstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SporProgramı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SporProgramı.Designer.cs">
+      <DependentUpon>SporProgramı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SporProgramıOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SporProgramıOlustur.Designer.cs">
+      <DependentUpon>SporProgramıOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeSilmeBolumu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeSilmeBolumu.Designer.cs">
+      <DependentUpon>UyeSilmeBolumu.cs</DependentUpon>
     </Compile>
     <Compile Include="ÜyeBilgileri.cs">
       <SubType>Form</SubType>
@@ -66,6 +114,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BeslenmeProgramı.resx">
+      <DependentUpon>BeslenmeProgramı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeslenmeProgramıOlustur.resx">
+      <DependentUpon>BeslenmeProgramıOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlcumOlustur.resx">
+      <DependentUpon>OlcumOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlcumSayfasi.resx">
+      <DependentUpon>OlcumSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Olcumİstatistik.resx">
       <DependentUpon>Olcumİstatistik.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +142,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SporProgramı.resx">
+      <DependentUpon>SporProgramı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SporProgramıOlustur.resx">
+      <DependentUpon>SporProgramıOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeSilmeBolumu.resx">
+      <DependentUpon>UyeSilmeBolumu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ÜyeBilgileri.resx">
       <DependentUpon>ÜyeBilgileri.cs</DependentUpon>
     </EmbeddedResource>

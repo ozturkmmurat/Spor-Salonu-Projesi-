@@ -288,7 +288,7 @@ namespace YönCalismaProje
             Komut.ExecuteNonQuery();
             Baglantim.Close();
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow drow in dataGrid_Program.SelectedRows)  //Seçili Satırları Silme
@@ -411,6 +411,11 @@ namespace YönCalismaProje
             SqlCommand GüncelleKomut = new SqlCommand("update Program_Bilgileri set Program_Baslangic='" + dataGrid_Ölcüm.CurrentRow.Cells[1].Value.ToString() + "' ,Program_Bitis='" + dataGrid_Ölcüm.CurrentRow.Cells[2].Value.ToString() + "', Program_KalanSure='" + dataGrid_Ölcüm.CurrentRow.Cells[3].Value.ToString() + "' ,Kilo='" + dataGrid_Ölcüm.CurrentRow.Cells[4].Value.ToString() + "'  ,Boy='" + dataGrid_Ölcüm.CurrentRow.Cells[5].Value.ToString() + "',Su_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[6].Value.ToString() + "',Kas_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[7].Value.ToString() + "' ,Yag_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[8].Value.ToString() +  "'where No = '" + dataGrid_Ölcüm.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
             GüncelleKomut.ExecuteNonQuery();
             Baglantim.Close();
+
+        }
+
+        private void dataGrid_Program_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
