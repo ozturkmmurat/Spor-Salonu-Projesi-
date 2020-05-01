@@ -45,6 +45,8 @@
             this.dataGrid_Program = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.List_SporProgrami = new System.Windows.Forms.ListBox();
+            this.btn_Guncelle = new System.Windows.Forms.Button();
+            this.lbl_Programbitis = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Program)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             this.btn_Sporprog.BackColor = System.Drawing.Color.White;
             this.btn_Sporprog.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sporprog.Image")));
             this.btn_Sporprog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sporprog.Location = new System.Drawing.Point(169, 72);
+            this.btn_Sporprog.Location = new System.Drawing.Point(157, 75);
             this.btn_Sporprog.Name = "btn_Sporprog";
             this.btn_Sporprog.Size = new System.Drawing.Size(131, 27);
             this.btn_Sporprog.TabIndex = 38;
@@ -112,7 +114,7 @@
             this.btn_Sil.BackColor = System.Drawing.Color.White;
             this.btn_Sil.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sil.Image")));
             this.btn_Sil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sil.Location = new System.Drawing.Point(537, 106);
+            this.btn_Sil.Location = new System.Drawing.Point(294, 76);
             this.btn_Sil.Name = "btn_Sil";
             this.btn_Sil.Size = new System.Drawing.Size(128, 26);
             this.btn_Sil.TabIndex = 65;
@@ -134,7 +136,7 @@
             // 
             // dateTime_Programbitis
             // 
-            this.dateTime_Programbitis.Location = new System.Drawing.Point(320, 107);
+            this.dateTime_Programbitis.Location = new System.Drawing.Point(352, 12);
             this.dateTime_Programbitis.Name = "dateTime_Programbitis";
             this.dateTime_Programbitis.Size = new System.Drawing.Size(200, 20);
             this.dateTime_Programbitis.TabIndex = 63;
@@ -142,7 +144,7 @@
             // 
             // dateTime_Programbaslangic
             // 
-            this.dateTime_Programbaslangic.Location = new System.Drawing.Point(320, 79);
+            this.dateTime_Programbaslangic.Location = new System.Drawing.Point(758, 138);
             this.dateTime_Programbaslangic.Name = "dateTime_Programbaslangic";
             this.dateTime_Programbaslangic.Size = new System.Drawing.Size(200, 20);
             this.dateTime_Programbaslangic.TabIndex = 62;
@@ -170,9 +172,9 @@
             this.btn_Olustur.BackColor = System.Drawing.Color.White;
             this.btn_Olustur.Image = ((System.Drawing.Image)(resources.GetObject("btn_Olustur.Image")));
             this.btn_Olustur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Olustur.Location = new System.Drawing.Point(537, 77);
+            this.btn_Olustur.Location = new System.Drawing.Point(157, 106);
             this.btn_Olustur.Name = "btn_Olustur";
-            this.btn_Olustur.Size = new System.Drawing.Size(128, 26);
+            this.btn_Olustur.Size = new System.Drawing.Size(131, 26);
             this.btn_Olustur.TabIndex = 59;
             this.btn_Olustur.Text = "Programı Oluştur";
             this.btn_Olustur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -195,23 +197,50 @@
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(-3, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 19);
+            this.label2.Size = new System.Drawing.Size(118, 19);
             this.label2.TabIndex = 68;
-            this.label2.Text = "Beslenme Programı";
+            this.label2.Text = "Spor Programı";
             // 
             // List_SporProgrami
             // 
             this.List_SporProgrami.FormattingEnabled = true;
             this.List_SporProgrami.Location = new System.Drawing.Point(1, 198);
             this.List_SporProgrami.Name = "List_SporProgrami";
-            this.List_SporProgrami.Size = new System.Drawing.Size(166, 199);
+            this.List_SporProgrami.Size = new System.Drawing.Size(166, 212);
             this.List_SporProgrami.TabIndex = 67;
+            // 
+            // btn_Guncelle
+            // 
+            this.btn_Guncelle.BackColor = System.Drawing.Color.White;
+            this.btn_Guncelle.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guncelle.Image")));
+            this.btn_Guncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Guncelle.Location = new System.Drawing.Point(294, 106);
+            this.btn_Guncelle.Name = "btn_Guncelle";
+            this.btn_Guncelle.Size = new System.Drawing.Size(128, 26);
+            this.btn_Guncelle.TabIndex = 69;
+            this.btn_Guncelle.Text = "Güncelle";
+            this.btn_Guncelle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Guncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Guncelle.UseVisualStyleBackColor = false;
+            this.btn_Guncelle.Click += new System.EventHandler(this.btn_Guncelle_Click);
+            // 
+            // lbl_Programbitis
+            // 
+            this.lbl_Programbitis.AutoSize = true;
+            this.lbl_Programbitis.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_Programbitis.Location = new System.Drawing.Point(172, 10);
+            this.lbl_Programbitis.Name = "lbl_Programbitis";
+            this.lbl_Programbitis.Size = new System.Drawing.Size(174, 22);
+            this.lbl_Programbitis.TabIndex = 70;
+            this.lbl_Programbitis.Text = "Program Bitiş Tarihi";
             // 
             // SporProgramıOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 409);
+            this.Controls.Add(this.lbl_Programbitis);
+            this.Controls.Add(this.btn_Guncelle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.List_SporProgrami);
             this.Controls.Add(this.dataGrid_Program);
@@ -255,5 +284,7 @@
         public System.Windows.Forms.DataGridView dataGrid_Program;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.ListBox List_SporProgrami;
+        private System.Windows.Forms.Button btn_Guncelle;
+        private System.Windows.Forms.Label lbl_Programbitis;
     }
 }

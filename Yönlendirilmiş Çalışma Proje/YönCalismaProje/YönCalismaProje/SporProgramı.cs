@@ -43,5 +43,12 @@ namespace YönCalismaProje
 
             SporProgramıOlusturmaSayfası.Show();
         }
+
+        private void btn_MenuyeDon_Click(object sender, EventArgs e)
+        {
+            Menu MenuSayfasi = new Menu();
+            MenuSayfasi.Show();
+            this.Hide();
+        }
     }
 }

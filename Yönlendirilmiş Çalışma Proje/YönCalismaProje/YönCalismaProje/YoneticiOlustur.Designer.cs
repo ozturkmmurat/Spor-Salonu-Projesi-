@@ -28,90 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(YoneticiOlustur));
+            this.lbl_SifreTekrar = new System.Windows.Forms.Label();
+            this.lbl_Şifre = new System.Windows.Forms.Label();
             this.lbl_KullaniciAdi = new System.Windows.Forms.Label();
-            this.lbl_Sifre = new System.Windows.Forms.Label();
-            this.lbl_Sifretekrar = new System.Windows.Forms.Label();
             this.txt_KullaniciAdi = new System.Windows.Forms.TextBox();
-            this.txt_Sifre = new System.Windows.Forms.TextBox();
             this.txt_SifreTekrar = new System.Windows.Forms.TextBox();
-            this.btn_KayıtOlustur = new System.Windows.Forms.Button();
+            this.txt_Sifre = new System.Windows.Forms.TextBox();
+            this.btn_YoneticiOlustur = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // lbl_SifreTekrar
+            // 
+            this.lbl_SifreTekrar.AutoSize = true;
+            this.lbl_SifreTekrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_SifreTekrar.Location = new System.Drawing.Point(19, 120);
+            this.lbl_SifreTekrar.Name = "lbl_SifreTekrar";
+            this.lbl_SifreTekrar.Size = new System.Drawing.Size(97, 18);
+            this.lbl_SifreTekrar.TabIndex = 70;
+            this.lbl_SifreTekrar.Text = "Şifre Tekrar";
+            // 
+            // lbl_Şifre
+            // 
+            this.lbl_Şifre.AutoSize = true;
+            this.lbl_Şifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_Şifre.Location = new System.Drawing.Point(17, 96);
+            this.lbl_Şifre.Name = "lbl_Şifre";
+            this.lbl_Şifre.Size = new System.Drawing.Size(43, 18);
+            this.lbl_Şifre.TabIndex = 69;
+            this.lbl_Şifre.Text = "Şifre";
             // 
             // lbl_KullaniciAdi
             // 
             this.lbl_KullaniciAdi.AutoSize = true;
-            this.lbl_KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_KullaniciAdi.Location = new System.Drawing.Point(32, 22);
+            this.lbl_KullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_KullaniciAdi.Location = new System.Drawing.Point(17, 70);
             this.lbl_KullaniciAdi.Name = "lbl_KullaniciAdi";
-            this.lbl_KullaniciAdi.Size = new System.Drawing.Size(106, 20);
-            this.lbl_KullaniciAdi.TabIndex = 0;
+            this.lbl_KullaniciAdi.Size = new System.Drawing.Size(99, 18);
+            this.lbl_KullaniciAdi.TabIndex = 68;
             this.lbl_KullaniciAdi.Text = "Kullanıcı Adı";
-            // 
-            // lbl_Sifre
-            // 
-            this.lbl_Sifre.AutoSize = true;
-            this.lbl_Sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Sifre.Location = new System.Drawing.Point(32, 55);
-            this.lbl_Sifre.Name = "lbl_Sifre";
-            this.lbl_Sifre.Size = new System.Drawing.Size(47, 20);
-            this.lbl_Sifre.TabIndex = 1;
-            this.lbl_Sifre.Text = "Şifre";
-            // 
-            // lbl_Sifretekrar
-            // 
-            this.lbl_Sifretekrar.AutoSize = true;
-            this.lbl_Sifretekrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Sifretekrar.Location = new System.Drawing.Point(32, 91);
-            this.lbl_Sifretekrar.Name = "lbl_Sifretekrar";
-            this.lbl_Sifretekrar.Size = new System.Drawing.Size(107, 20);
-            this.lbl_Sifretekrar.TabIndex = 2;
-            this.lbl_Sifretekrar.Text = "Şifre Tekrarı";
             // 
             // txt_KullaniciAdi
             // 
-            this.txt_KullaniciAdi.Location = new System.Drawing.Point(177, 21);
+            this.txt_KullaniciAdi.Location = new System.Drawing.Point(138, 68);
             this.txt_KullaniciAdi.Name = "txt_KullaniciAdi";
-            this.txt_KullaniciAdi.Size = new System.Drawing.Size(100, 20);
-            this.txt_KullaniciAdi.TabIndex = 3;
-            // 
-            // txt_Sifre
-            // 
-            this.txt_Sifre.Location = new System.Drawing.Point(177, 57);
-            this.txt_Sifre.Name = "txt_Sifre";
-            this.txt_Sifre.Size = new System.Drawing.Size(100, 20);
-            this.txt_Sifre.TabIndex = 4;
+            this.txt_KullaniciAdi.Size = new System.Drawing.Size(107, 20);
+            this.txt_KullaniciAdi.TabIndex = 67;
             // 
             // txt_SifreTekrar
             // 
-            this.txt_SifreTekrar.Location = new System.Drawing.Point(177, 93);
+            this.txt_SifreTekrar.Location = new System.Drawing.Point(138, 120);
             this.txt_SifreTekrar.Name = "txt_SifreTekrar";
-            this.txt_SifreTekrar.Size = new System.Drawing.Size(100, 20);
-            this.txt_SifreTekrar.TabIndex = 5;
+            this.txt_SifreTekrar.PasswordChar = '*';
+            this.txt_SifreTekrar.Size = new System.Drawing.Size(107, 20);
+            this.txt_SifreTekrar.TabIndex = 66;
             // 
-            // btn_KayıtOlustur
+            // txt_Sifre
             // 
-            this.btn_KayıtOlustur.Location = new System.Drawing.Point(177, 142);
-            this.btn_KayıtOlustur.Name = "btn_KayıtOlustur";
-            this.btn_KayıtOlustur.Size = new System.Drawing.Size(100, 23);
-            this.btn_KayıtOlustur.TabIndex = 6;
-            this.btn_KayıtOlustur.Text = "Kayıt Oluştur";
-            this.btn_KayıtOlustur.UseVisualStyleBackColor = true;
-            this.btn_KayıtOlustur.Click += new System.EventHandler(this.btn_KayıtOlustur_Click);
+            this.txt_Sifre.Location = new System.Drawing.Point(138, 94);
+            this.txt_Sifre.Name = "txt_Sifre";
+            this.txt_Sifre.PasswordChar = '*';
+            this.txt_Sifre.Size = new System.Drawing.Size(107, 20);
+            this.txt_Sifre.TabIndex = 65;
+            // 
+            // btn_YoneticiOlustur
+            // 
+            this.btn_YoneticiOlustur.BackColor = System.Drawing.Color.White;
+            this.btn_YoneticiOlustur.Image = ((System.Drawing.Image)(resources.GetObject("btn_YoneticiOlustur.Image")));
+            this.btn_YoneticiOlustur.Location = new System.Drawing.Point(138, 159);
+            this.btn_YoneticiOlustur.Name = "btn_YoneticiOlustur";
+            this.btn_YoneticiOlustur.Size = new System.Drawing.Size(107, 30);
+            this.btn_YoneticiOlustur.TabIndex = 64;
+            this.btn_YoneticiOlustur.Text = "Yönetici Oluştur";
+            this.btn_YoneticiOlustur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_YoneticiOlustur.UseVisualStyleBackColor = false;
+            this.btn_YoneticiOlustur.Click += new System.EventHandler(this.btn_YoneticiOlustur_Click_1);
             // 
             // YoneticiOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 361);
-            this.Controls.Add(this.btn_KayıtOlustur);
+            this.ClientSize = new System.Drawing.Size(844, 391);
+            this.Controls.Add(this.lbl_SifreTekrar);
+            this.Controls.Add(this.lbl_Şifre);
+            this.Controls.Add(this.lbl_KullaniciAdi);
+            this.Controls.Add(this.txt_KullaniciAdi);
             this.Controls.Add(this.txt_SifreTekrar);
             this.Controls.Add(this.txt_Sifre);
-            this.Controls.Add(this.txt_KullaniciAdi);
-            this.Controls.Add(this.lbl_Sifretekrar);
-            this.Controls.Add(this.lbl_Sifre);
-            this.Controls.Add(this.lbl_KullaniciAdi);
+            this.Controls.Add(this.btn_YoneticiOlustur);
             this.Name = "YoneticiOlustur";
-            this.Text = "YoneticiOlustur";
+            this.Text = "YonneticiOlustur";
+            this.Load += new System.EventHandler(this.YonneticiOlustur_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,12 +126,12 @@
 
         #endregion
 
+        private System.Windows.Forms.Label lbl_SifreTekrar;
+        private System.Windows.Forms.Label lbl_Şifre;
         private System.Windows.Forms.Label lbl_KullaniciAdi;
-        private System.Windows.Forms.Label lbl_Sifre;
-        private System.Windows.Forms.Label lbl_Sifretekrar;
         private System.Windows.Forms.TextBox txt_KullaniciAdi;
-        private System.Windows.Forms.TextBox txt_Sifre;
         private System.Windows.Forms.TextBox txt_SifreTekrar;
-        private System.Windows.Forms.Button btn_KayıtOlustur;
+        private System.Windows.Forms.TextBox txt_Sifre;
+        private System.Windows.Forms.Button btn_YoneticiOlustur;
     }
 }

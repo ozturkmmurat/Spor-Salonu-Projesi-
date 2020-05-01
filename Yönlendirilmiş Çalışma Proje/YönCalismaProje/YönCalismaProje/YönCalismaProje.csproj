@@ -58,6 +58,12 @@
     <Compile Include="BeslenmeProgramıOlustur.Designer.cs">
       <DependentUpon>BeslenmeProgramıOlustur.cs</DependentUpon>
     </Compile>
+    <Compile Include="GİrisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GİrisSayfasi.Designer.cs">
+      <DependentUpon>GİrisSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="UyeSilmeBolumu.Designer.cs">
       <DependentUpon>UyeSilmeBolumu.cs</DependentUpon>
     </Compile>
+    <Compile Include="YoneticiOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiOlustur.Designer.cs">
+      <DependentUpon>YoneticiOlustur.cs</DependentUpon>
+    </Compile>
     <Compile Include="ÜyeBilgileri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BeslenmeProgramıOlustur.resx">
       <DependentUpon>BeslenmeProgramıOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GİrisSayfasi.resx">
+      <DependentUpon>GİrisSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -150,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UyeSilmeBolumu.resx">
       <DependentUpon>UyeSilmeBolumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiOlustur.resx">
+      <DependentUpon>YoneticiOlustur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ÜyeBilgileri.resx">
       <DependentUpon>ÜyeBilgileri.cs</DependentUpon>

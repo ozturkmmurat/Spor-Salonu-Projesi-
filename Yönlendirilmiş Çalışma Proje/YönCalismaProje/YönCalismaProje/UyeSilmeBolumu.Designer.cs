@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UyeSilmeBolumu));
             this.dataGridUyeSilme = new System.Windows.Forms.DataGridView();
             this.txt_Kayıtsil = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_MenuyeDon = new System.Windows.Forms.Button();
             this.btn_Sil = new System.Windows.Forms.Button();
             this.btn_TopluKayıtSil = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUyeSilme)).BeginInit();
@@ -62,27 +64,50 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "İD";
             // 
+            // btn_MenuyeDon
+            // 
+            this.btn_MenuyeDon.BackColor = System.Drawing.Color.White;
+            this.btn_MenuyeDon.Image = ((System.Drawing.Image)(resources.GetObject("btn_MenuyeDon.Image")));
+            this.btn_MenuyeDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_MenuyeDon.Location = new System.Drawing.Point(42, 157);
+            this.btn_MenuyeDon.Name = "btn_MenuyeDon";
+            this.btn_MenuyeDon.Size = new System.Drawing.Size(128, 30);
+            this.btn_MenuyeDon.TabIndex = 72;
+            this.btn_MenuyeDon.Text = "Menüye Dön";
+            this.btn_MenuyeDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_MenuyeDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_MenuyeDon.UseVisualStyleBackColor = false;
+            this.btn_MenuyeDon.Click += new System.EventHandler(this.btn_MenuyeDon_Click);
+            // 
             // btn_Sil
             // 
-            this.btn_Sil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_Sil.Location = new System.Drawing.Point(42, 181);
+            this.btn_Sil.BackColor = System.Drawing.Color.White;
+            this.btn_Sil.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sil.Image")));
+            this.btn_Sil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Sil.Location = new System.Drawing.Point(42, 85);
             this.btn_Sil.Name = "btn_Sil";
-            this.btn_Sil.Size = new System.Drawing.Size(133, 33);
-            this.btn_Sil.TabIndex = 3;
+            this.btn_Sil.Size = new System.Drawing.Size(128, 30);
+            this.btn_Sil.TabIndex = 74;
             this.btn_Sil.Text = "Sil";
-            this.btn_Sil.UseVisualStyleBackColor = true;
-            this.btn_Sil.Click += new System.EventHandler(this.btn_Sil_Click);
+            this.btn_Sil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Sil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Sil.UseVisualStyleBackColor = false;
+            this.btn_Sil.Click += new System.EventHandler(this.btn_Sil_Click_1);
             // 
             // btn_TopluKayıtSil
             // 
-            this.btn_TopluKayıtSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_TopluKayıtSil.Location = new System.Drawing.Point(194, 181);
+            this.btn_TopluKayıtSil.BackColor = System.Drawing.Color.White;
+            this.btn_TopluKayıtSil.Image = ((System.Drawing.Image)(resources.GetObject("btn_TopluKayıtSil.Image")));
+            this.btn_TopluKayıtSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TopluKayıtSil.Location = new System.Drawing.Point(42, 121);
             this.btn_TopluKayıtSil.Name = "btn_TopluKayıtSil";
-            this.btn_TopluKayıtSil.Size = new System.Drawing.Size(133, 33);
-            this.btn_TopluKayıtSil.TabIndex = 4;
+            this.btn_TopluKayıtSil.Size = new System.Drawing.Size(128, 30);
+            this.btn_TopluKayıtSil.TabIndex = 75;
             this.btn_TopluKayıtSil.Text = "Toplu Kayıt Sil";
-            this.btn_TopluKayıtSil.UseVisualStyleBackColor = true;
-            this.btn_TopluKayıtSil.Click += new System.EventHandler(this.btn_TopluKayıtSil_Click);
+            this.btn_TopluKayıtSil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TopluKayıtSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_TopluKayıtSil.UseVisualStyleBackColor = false;
+            this.btn_TopluKayıtSil.Click += new System.EventHandler(this.btn_TopluKayıtSil_Click_1);
             // 
             // UyeSilmeBolumu
             // 
@@ -91,6 +116,7 @@
             this.ClientSize = new System.Drawing.Size(872, 383);
             this.Controls.Add(this.btn_TopluKayıtSil);
             this.Controls.Add(this.btn_Sil);
+            this.Controls.Add(this.btn_MenuyeDon);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_Kayıtsil);
             this.Controls.Add(this.dataGridUyeSilme);
@@ -108,6 +134,7 @@
         private System.Windows.Forms.DataGridView dataGridUyeSilme;
         private System.Windows.Forms.TextBox txt_Kayıtsil;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_MenuyeDon;
         private System.Windows.Forms.Button btn_Sil;
         private System.Windows.Forms.Button btn_TopluKayıtSil;
     }

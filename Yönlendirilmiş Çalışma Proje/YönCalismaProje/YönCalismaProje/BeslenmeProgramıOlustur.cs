@@ -21,10 +21,12 @@ namespace YönCalismaProje
         public static string idtut;
         public void BeslenmeProgramıOlustur_Load(object sender, EventArgs e)
         {
-
-
-            lbl_usbb.Text = dateTime_Programbaslangic.Value.ToString();
-            lbl_usbts.Text = dateTime_Programbitis.Value.ToString();
+            dateTime_Programbaslangic.Visible = false;
+            lbl_usbb.Visible = false;
+            lbl_usbts.Visible = false;
+            lbl_Programsurehesapla.Visible = false;
+            lbl_usbb.Text = dateTime_Programbaslangic.Value.ToString("ddd, MMM d, yyyy"); 
+            lbl_usbts.Text = dateTime_Programbitis.Value.ToString("ddd, MMM d, yyyy");
             Tablolustur();
         }
 
@@ -92,8 +94,8 @@ namespace YönCalismaProje
 
 
                     string sql = "INSERT  INTO Beslenme_Programı_tbl (id,Program_Baslangic,Program_Bitis,Program_Kalansure,Beslenme_Programi) VALUES (@id,@Program_Baslangic,@Program_Bitis,@Program_Kalansure,@Beslenme_Programi)";
-                    string date1 = dateTime_Programbaslangic.Value.ToString();
-                    string date2 = dateTime_Programbitis.Value.ToString();
+                    string date1 = dateTime_Programbaslangic.Value.ToString("ddd, MMM d, yyyy"); ;
+                    string date2 = dateTime_Programbitis.Value.ToString("ddd, MMM d, yyyy"); ;
 
 
                     SqlCommand komut2;
@@ -141,7 +143,7 @@ namespace YönCalismaProje
 
         private void dateTime_Programbitis_ValueChanged(object sender, EventArgs e)
         {
-            lbl_usbts.Text = dateTime_Programbitis.Value.ToString();
+            lbl_usbts.Text = dateTime_Programbitis.Value.ToString("ddd, MMM d, yyyy"); ;
 
         }
         void SecerekSil(int Kullanici_İd){
@@ -163,6 +165,14 @@ namespace YönCalismaProje
                 
             }
             Tablolustur();
+        }
+
+        private void btn_Guncelle_Click(object sender, EventArgs e)
+        {
+            Baglantim.Open();
+            SqlCommand GüncelleKomut = new SqlCommand("update Beslenme_Programı_tbl set Program_Baslangic='" + dataGridBeslenme.CurrentRow.Cells[1].Value.ToString() + "' ,Program_Bitis='" + dataGridBeslenme.CurrentRow.Cells[2].Value.ToString() + "', Program_KalanSure='" + dataGridBeslenme.CurrentRow.Cells[3].Value.ToString() + "' ,Beslenme_Programi='" + dataGridBeslenme.CurrentRow.Cells[4].Value.ToString() + "'where No = '" + dataGridBeslenme.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
+            GüncelleKomut.ExecuteNonQuery();
+            Baglantim.Close();
         }
     }
 

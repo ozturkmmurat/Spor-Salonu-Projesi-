@@ -51,5 +51,10 @@ namespace YönCalismaProje
             OlcumSayfasi.Show();
             this.Hide();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,34 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ÜyeKayit));
             this.lbl_Tc = new System.Windows.Forms.Label();
             this.lbl_Ad = new System.Windows.Forms.Label();
             this.lbl_Soyad = new System.Windows.Forms.Label();
             this.lbl_Yas = new System.Windows.Forms.Label();
             this.lbl_DogumTarihi = new System.Windows.Forms.Label();
-            this.lbl_Kilo = new System.Windows.Forms.Label();
-            this.lbl_Boy = new System.Windows.Forms.Label();
             this.lbl_ÜyelikSüresi = new System.Windows.Forms.Label();
             this.txt_Tc = new System.Windows.Forms.TextBox();
             this.txt_Ad = new System.Windows.Forms.TextBox();
             this.txt_Soyad = new System.Windows.Forms.TextBox();
             this.txt_Yas = new System.Windows.Forms.TextBox();
-            this.txt_Kilo = new System.Windows.Forms.TextBox();
-            this.txt_Boy = new System.Windows.Forms.TextBox();
             this.dateTime_DogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.datagrid_ÜyeBilgileri = new System.Windows.Forms.DataGridView();
             this.btn_Yenile = new System.Windows.Forms.Button();
-            this.btn_KayıtSil = new System.Windows.Forms.Button();
-            this.txt_Kayıtsil = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_Toplukayıtsil = new System.Windows.Forms.Button();
             this.btn_Ara = new System.Windows.Forms.Button();
             this.txt_KayıtAra = new System.Windows.Forms.TextBox();
             this.lbl_Kayıtara = new System.Windows.Forms.Label();
             this.btn_Üyeliksüresi = new System.Windows.Forms.Button();
             this.dateTime_Uyelikbaslangıç = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTime_Uyeliksüresibitis = new System.Windows.Forms.DateTimePicker();
             this.lbl_ÜyelikbitişHesapla = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label_message = new System.Windows.Forms.Label();
@@ -71,6 +62,9 @@
             this.txt_Telno = new System.Windows.Forms.TextBox();
             this.lbl_Telno = new System.Windows.Forms.Label();
             this.btn_KayitiOlustur = new System.Windows.Forms.Button();
+            this.lbl_UyelıkPaketi = new System.Windows.Forms.Label();
+            this.comboBox_Paket = new System.Windows.Forms.ComboBox();
+            this.btn_MenuyeDon = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_ÜyeBilgileri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,26 +118,6 @@
             this.lbl_DogumTarihi.TabIndex = 4;
             this.lbl_DogumTarihi.Text = "Doğum Tarihi";
             // 
-            // lbl_Kilo
-            // 
-            this.lbl_Kilo.AutoSize = true;
-            this.lbl_Kilo.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Kilo.Location = new System.Drawing.Point(17, 166);
-            this.lbl_Kilo.Name = "lbl_Kilo";
-            this.lbl_Kilo.Size = new System.Drawing.Size(42, 22);
-            this.lbl_Kilo.TabIndex = 5;
-            this.lbl_Kilo.Text = "Kilo";
-            // 
-            // lbl_Boy
-            // 
-            this.lbl_Boy.AutoSize = true;
-            this.lbl_Boy.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Boy.Location = new System.Drawing.Point(17, 204);
-            this.lbl_Boy.Name = "lbl_Boy";
-            this.lbl_Boy.Size = new System.Drawing.Size(41, 22);
-            this.lbl_Boy.TabIndex = 6;
-            this.lbl_Boy.Text = "Boy";
-            // 
             // lbl_ÜyelikSüresi
             // 
             this.lbl_ÜyelikSüresi.AutoSize = true;
@@ -158,7 +132,7 @@
             // 
             this.txt_Tc.Location = new System.Drawing.Point(126, 28);
             this.txt_Tc.Name = "txt_Tc";
-            this.txt_Tc.Size = new System.Drawing.Size(100, 20);
+            this.txt_Tc.Size = new System.Drawing.Size(105, 20);
             this.txt_Tc.TabIndex = 8;
             this.txt_Tc.TextChanged += new System.EventHandler(this.txt_Tc_TextChanged);
             this.txt_Tc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Tc_KeyPress);
@@ -167,7 +141,7 @@
             // 
             this.txt_Ad.Location = new System.Drawing.Point(126, 64);
             this.txt_Ad.Name = "txt_Ad";
-            this.txt_Ad.Size = new System.Drawing.Size(100, 20);
+            this.txt_Ad.Size = new System.Drawing.Size(105, 20);
             this.txt_Ad.TabIndex = 9;
             this.txt_Ad.TextChanged += new System.EventHandler(this.txt_Ad_TextChanged);
             this.txt_Ad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Soyad_KeyPress);
@@ -176,7 +150,7 @@
             // 
             this.txt_Soyad.Location = new System.Drawing.Point(126, 101);
             this.txt_Soyad.Name = "txt_Soyad";
-            this.txt_Soyad.Size = new System.Drawing.Size(100, 20);
+            this.txt_Soyad.Size = new System.Drawing.Size(105, 20);
             this.txt_Soyad.TabIndex = 10;
             this.txt_Soyad.TextChanged += new System.EventHandler(this.txt_Soyad_TextChanged);
             this.txt_Soyad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Soyad_KeyPress);
@@ -185,28 +159,10 @@
             // 
             this.txt_Yas.Location = new System.Drawing.Point(126, 135);
             this.txt_Yas.Name = "txt_Yas";
-            this.txt_Yas.Size = new System.Drawing.Size(100, 20);
+            this.txt_Yas.Size = new System.Drawing.Size(105, 20);
             this.txt_Yas.TabIndex = 11;
             this.txt_Yas.TextChanged += new System.EventHandler(this.txt_Yas_TextChanged);
             this.txt_Yas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Yas_KeyPress);
-            // 
-            // txt_Kilo
-            // 
-            this.txt_Kilo.Location = new System.Drawing.Point(126, 168);
-            this.txt_Kilo.Name = "txt_Kilo";
-            this.txt_Kilo.Size = new System.Drawing.Size(100, 20);
-            this.txt_Kilo.TabIndex = 12;
-            this.txt_Kilo.TextChanged += new System.EventHandler(this.txt_Kilo_TextChanged);
-            this.txt_Kilo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Boy_KeyPress);
-            // 
-            // txt_Boy
-            // 
-            this.txt_Boy.Location = new System.Drawing.Point(126, 203);
-            this.txt_Boy.Name = "txt_Boy";
-            this.txt_Boy.Size = new System.Drawing.Size(100, 20);
-            this.txt_Boy.TabIndex = 13;
-            this.txt_Boy.TextChanged += new System.EventHandler(this.txt_Boy_TextChanged);
-            this.txt_Boy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Boy_KeyPress);
             // 
             // dateTime_DogumTarihi
             // 
@@ -230,7 +186,7 @@
             this.btn_Yenile.BackColor = System.Drawing.Color.White;
             this.btn_Yenile.Image = global::YönCalismaProje.Properties.Resources.images__1_;
             this.btn_Yenile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Yenile.Location = new System.Drawing.Point(333, 305);
+            this.btn_Yenile.Location = new System.Drawing.Point(136, 305);
             this.btn_Yenile.Name = "btn_Yenile";
             this.btn_Yenile.Size = new System.Drawing.Size(105, 34);
             this.btn_Yenile.TabIndex = 18;
@@ -239,59 +195,12 @@
             this.btn_Yenile.UseVisualStyleBackColor = false;
             this.btn_Yenile.Click += new System.EventHandler(this.btn_Yenile_Click);
             // 
-            // btn_KayıtSil
-            // 
-            this.btn_KayıtSil.BackColor = System.Drawing.Color.White;
-            this.btn_KayıtSil.Image = global::YönCalismaProje.Properties.Resources.images__1_;
-            this.btn_KayıtSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_KayıtSil.Location = new System.Drawing.Point(126, 305);
-            this.btn_KayıtSil.Name = "btn_KayıtSil";
-            this.btn_KayıtSil.Size = new System.Drawing.Size(95, 34);
-            this.btn_KayıtSil.TabIndex = 19;
-            this.btn_KayıtSil.Text = "Kayıtı Sil";
-            this.btn_KayıtSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_KayıtSil.UseVisualStyleBackColor = false;
-            this.btn_KayıtSil.Click += new System.EventHandler(this.btn_KayıtSil_Click);
-            // 
-            // txt_Kayıtsil
-            // 
-            this.txt_Kayıtsil.Location = new System.Drawing.Point(452, 236);
-            this.txt_Kayıtsil.Name = "txt_Kayıtsil";
-            this.txt_Kayıtsil.Size = new System.Drawing.Size(169, 20);
-            this.txt_Kayıtsil.TabIndex = 21;
-            this.txt_Kayıtsil.TextChanged += new System.EventHandler(this.txt_Kayıtsil_TextChanged);
-            this.txt_Kayıtsil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Kayıtsil_KeyPress);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(251, 234);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 22);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Kayıt Sil";
-            // 
-            // btn_Toplukayıtsil
-            // 
-            this.btn_Toplukayıtsil.BackColor = System.Drawing.Color.White;
-            this.btn_Toplukayıtsil.Image = global::YönCalismaProje.Properties.Resources.images__1_;
-            this.btn_Toplukayıtsil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Toplukayıtsil.Location = new System.Drawing.Point(224, 305);
-            this.btn_Toplukayıtsil.Name = "btn_Toplukayıtsil";
-            this.btn_Toplukayıtsil.Size = new System.Drawing.Size(103, 34);
-            this.btn_Toplukayıtsil.TabIndex = 22;
-            this.btn_Toplukayıtsil.Text = "Toplu Kayıt Sil";
-            this.btn_Toplukayıtsil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Toplukayıtsil.UseVisualStyleBackColor = false;
-            this.btn_Toplukayıtsil.Click += new System.EventHandler(this.btn_Toplukayıtsil_Click);
-            // 
             // btn_Ara
             // 
             this.btn_Ara.BackColor = System.Drawing.Color.White;
             this.btn_Ara.Image = global::YönCalismaProje.Properties.Resources.images__1_;
             this.btn_Ara.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Ara.Location = new System.Drawing.Point(444, 305);
+            this.btn_Ara.Location = new System.Drawing.Point(247, 305);
             this.btn_Ara.Name = "btn_Ara";
             this.btn_Ara.Size = new System.Drawing.Size(104, 34);
             this.btn_Ara.TabIndex = 23;
@@ -302,7 +211,7 @@
             // 
             // txt_KayıtAra
             // 
-            this.txt_KayıtAra.Location = new System.Drawing.Point(452, 267);
+            this.txt_KayıtAra.Location = new System.Drawing.Point(450, 172);
             this.txt_KayıtAra.Name = "txt_KayıtAra";
             this.txt_KayıtAra.Size = new System.Drawing.Size(169, 20);
             this.txt_KayıtAra.TabIndex = 25;
@@ -312,7 +221,7 @@
             // 
             this.lbl_Kayıtara.AutoSize = true;
             this.lbl_Kayıtara.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Kayıtara.Location = new System.Drawing.Point(251, 269);
+            this.lbl_Kayıtara.Location = new System.Drawing.Point(249, 172);
             this.lbl_Kayıtara.Name = "lbl_Kayıtara";
             this.lbl_Kayıtara.Size = new System.Drawing.Size(84, 22);
             this.lbl_Kayıtara.TabIndex = 24;
@@ -323,7 +232,7 @@
             this.btn_Üyeliksüresi.BackColor = System.Drawing.Color.White;
             this.btn_Üyeliksüresi.Image = global::YönCalismaProje.Properties.Resources.images__1_;
             this.btn_Üyeliksüresi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Üyeliksüresi.Location = new System.Drawing.Point(554, 305);
+            this.btn_Üyeliksüresi.Location = new System.Drawing.Point(357, 305);
             this.btn_Üyeliksüresi.Name = "btn_Üyeliksüresi";
             this.btn_Üyeliksüresi.Size = new System.Drawing.Size(147, 34);
             this.btn_Üyeliksüresi.TabIndex = 26;
@@ -338,29 +247,12 @@
             this.dateTime_Uyelikbaslangıç.Name = "dateTime_Uyelikbaslangıç";
             this.dateTime_Uyelikbaslangıç.Size = new System.Drawing.Size(169, 20);
             this.dateTime_Uyelikbaslangıç.TabIndex = 27;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(251, 98);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 22);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Üyelik Süresi Bitiş";
-            // 
-            // dateTime_Uyeliksüresibitis
-            // 
-            this.dateTime_Uyeliksüresibitis.Location = new System.Drawing.Point(452, 100);
-            this.dateTime_Uyeliksüresibitis.Name = "dateTime_Uyeliksüresibitis";
-            this.dateTime_Uyeliksüresibitis.Size = new System.Drawing.Size(169, 20);
-            this.dateTime_Uyeliksüresibitis.TabIndex = 29;
-            this.dateTime_Uyeliksüresibitis.ValueChanged += new System.EventHandler(this.dateTime_Uyeliksüresibitis_ValueChanged);
+            this.dateTime_Uyelikbaslangıç.ValueChanged += new System.EventHandler(this.dateTime_Uyelikbaslangıç_ValueChanged);
             // 
             // lbl_ÜyelikbitişHesapla
             // 
             this.lbl_ÜyelikbitişHesapla.AutoSize = true;
-            this.lbl_ÜyelikbitişHesapla.Location = new System.Drawing.Point(449, 138);
+            this.lbl_ÜyelikbitişHesapla.Location = new System.Drawing.Point(449, 107);
             this.lbl_ÜyelikbitişHesapla.Name = "lbl_ÜyelikbitişHesapla";
             this.lbl_ÜyelikbitişHesapla.Size = new System.Drawing.Size(0, 13);
             this.lbl_ÜyelikbitişHesapla.TabIndex = 10;
@@ -369,7 +261,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(251, 132);
+            this.label3.Location = new System.Drawing.Point(251, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 22);
             this.label3.TabIndex = 31;
@@ -405,7 +297,7 @@
             this.btn_Güncelle.BackColor = System.Drawing.Color.White;
             this.btn_Güncelle.Image = global::YönCalismaProje.Properties.Resources.images__1_;
             this.btn_Güncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Güncelle.Location = new System.Drawing.Point(707, 305);
+            this.btn_Güncelle.Location = new System.Drawing.Point(510, 305);
             this.btn_Güncelle.Name = "btn_Güncelle";
             this.btn_Güncelle.Size = new System.Drawing.Size(104, 34);
             this.btn_Güncelle.TabIndex = 38;
@@ -421,9 +313,9 @@
             this.combo_Cinsiyet.Items.AddRange(new object[] {
             "KADIN",
             "ERKEK"});
-            this.combo_Cinsiyet.Location = new System.Drawing.Point(126, 236);
+            this.combo_Cinsiyet.Location = new System.Drawing.Point(126, 172);
             this.combo_Cinsiyet.Name = "combo_Cinsiyet";
-            this.combo_Cinsiyet.Size = new System.Drawing.Size(100, 21);
+            this.combo_Cinsiyet.Size = new System.Drawing.Size(105, 21);
             this.combo_Cinsiyet.TabIndex = 39;
             this.combo_Cinsiyet.SelectedIndexChanged += new System.EventHandler(this.combo_Cinsiyet_SelectedIndexChanged);
             // 
@@ -431,7 +323,7 @@
             // 
             this.lbl_Cinsiyet.AutoSize = true;
             this.lbl_Cinsiyet.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Cinsiyet.Location = new System.Drawing.Point(17, 234);
+            this.lbl_Cinsiyet.Location = new System.Drawing.Point(17, 170);
             this.lbl_Cinsiyet.Name = "lbl_Cinsiyet";
             this.lbl_Cinsiyet.Size = new System.Drawing.Size(74, 22);
             this.lbl_Cinsiyet.TabIndex = 40;
@@ -439,9 +331,9 @@
             // 
             // txt_Email
             // 
-            this.txt_Email.Location = new System.Drawing.Point(126, 269);
+            this.txt_Email.Location = new System.Drawing.Point(126, 205);
             this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(100, 20);
+            this.txt_Email.Size = new System.Drawing.Size(105, 20);
             this.txt_Email.TabIndex = 42;
             this.txt_Email.TextChanged += new System.EventHandler(this.txt_Email_TextChanged);
             // 
@@ -449,7 +341,7 @@
             // 
             this.lbl_Email.AutoSize = true;
             this.lbl_Email.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Email.Location = new System.Drawing.Point(17, 267);
+            this.lbl_Email.Location = new System.Drawing.Point(17, 203);
             this.lbl_Email.Name = "lbl_Email";
             this.lbl_Email.Size = new System.Drawing.Size(61, 22);
             this.lbl_Email.TabIndex = 41;
@@ -457,7 +349,7 @@
             // 
             // txt_Adres
             // 
-            this.txt_Adres.Location = new System.Drawing.Point(452, 166);
+            this.txt_Adres.Location = new System.Drawing.Point(452, 136);
             this.txt_Adres.Name = "txt_Adres";
             this.txt_Adres.Size = new System.Drawing.Size(169, 20);
             this.txt_Adres.TabIndex = 44;
@@ -466,7 +358,7 @@
             // 
             this.lbl_Adres.AutoSize = true;
             this.lbl_Adres.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Adres.Location = new System.Drawing.Point(251, 163);
+            this.lbl_Adres.Location = new System.Drawing.Point(251, 136);
             this.lbl_Adres.Name = "lbl_Adres";
             this.lbl_Adres.Size = new System.Drawing.Size(57, 22);
             this.lbl_Adres.TabIndex = 43;
@@ -474,16 +366,16 @@
             // 
             // txt_Telno
             // 
-            this.txt_Telno.Location = new System.Drawing.Point(452, 200);
+            this.txt_Telno.Location = new System.Drawing.Point(126, 241);
             this.txt_Telno.Name = "txt_Telno";
-            this.txt_Telno.Size = new System.Drawing.Size(169, 20);
+            this.txt_Telno.Size = new System.Drawing.Size(105, 20);
             this.txt_Telno.TabIndex = 46;
             // 
             // lbl_Telno
             // 
             this.lbl_Telno.AutoSize = true;
             this.lbl_Telno.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_Telno.Location = new System.Drawing.Point(251, 200);
+            this.lbl_Telno.Location = new System.Drawing.Point(15, 239);
             this.lbl_Telno.Name = "lbl_Telno";
             this.lbl_Telno.Size = new System.Drawing.Size(100, 22);
             this.lbl_Telno.TabIndex = 45;
@@ -503,11 +395,52 @@
             this.btn_KayitiOlustur.UseVisualStyleBackColor = false;
             this.btn_KayitiOlustur.Click += new System.EventHandler(this.btn_KayitiOlustur_Click);
             // 
+            // lbl_UyelıkPaketi
+            // 
+            this.lbl_UyelıkPaketi.AutoSize = true;
+            this.lbl_UyelıkPaketi.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_UyelıkPaketi.Location = new System.Drawing.Point(251, 205);
+            this.lbl_UyelıkPaketi.Name = "lbl_UyelıkPaketi";
+            this.lbl_UyelıkPaketi.Size = new System.Drawing.Size(116, 22);
+            this.lbl_UyelıkPaketi.TabIndex = 48;
+            this.lbl_UyelıkPaketi.Text = "Üyelik Paketi";
+            // 
+            // comboBox_Paket
+            // 
+            this.comboBox_Paket.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Paket.FormattingEnabled = true;
+            this.comboBox_Paket.Items.AddRange(new object[] {
+            "5 GÜNLÜK",
+            "20 GÜNLÜK"});
+            this.comboBox_Paket.Location = new System.Drawing.Point(450, 208);
+            this.comboBox_Paket.Name = "comboBox_Paket";
+            this.comboBox_Paket.Size = new System.Drawing.Size(169, 21);
+            this.comboBox_Paket.TabIndex = 47;
+            this.comboBox_Paket.SelectedIndexChanged += new System.EventHandler(this.comboBox_Paket_SelectedIndexChanged);
+            // 
+            // btn_MenuyeDon
+            // 
+            this.btn_MenuyeDon.BackColor = System.Drawing.Color.White;
+            this.btn_MenuyeDon.Image = ((System.Drawing.Image)(resources.GetObject("btn_MenuyeDon.Image")));
+            this.btn_MenuyeDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_MenuyeDon.Location = new System.Drawing.Point(620, 305);
+            this.btn_MenuyeDon.Name = "btn_MenuyeDon";
+            this.btn_MenuyeDon.Size = new System.Drawing.Size(128, 30);
+            this.btn_MenuyeDon.TabIndex = 72;
+            this.btn_MenuyeDon.Text = "Menüye Dön";
+            this.btn_MenuyeDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_MenuyeDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_MenuyeDon.UseVisualStyleBackColor = false;
+            this.btn_MenuyeDon.Click += new System.EventHandler(this.btn_MenuyeDon_Click);
+            // 
             // ÜyeKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 528);
+            this.Controls.Add(this.btn_MenuyeDon);
+            this.Controls.Add(this.lbl_UyelıkPaketi);
+            this.Controls.Add(this.comboBox_Paket);
             this.Controls.Add(this.txt_Telno);
             this.Controls.Add(this.lbl_Telno);
             this.Controls.Add(this.txt_Adres);
@@ -522,30 +455,20 @@
             this.Controls.Add(this.label_message);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_ÜyelikbitişHesapla);
-            this.Controls.Add(this.dateTime_Uyeliksüresibitis);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTime_Uyelikbaslangıç);
             this.Controls.Add(this.btn_Üyeliksüresi);
             this.Controls.Add(this.txt_KayıtAra);
             this.Controls.Add(this.lbl_Kayıtara);
             this.Controls.Add(this.btn_Ara);
-            this.Controls.Add(this.btn_Toplukayıtsil);
-            this.Controls.Add(this.txt_Kayıtsil);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_KayıtSil);
             this.Controls.Add(this.btn_Yenile);
             this.Controls.Add(this.btn_KayitiOlustur);
             this.Controls.Add(this.datagrid_ÜyeBilgileri);
             this.Controls.Add(this.dateTime_DogumTarihi);
-            this.Controls.Add(this.txt_Boy);
-            this.Controls.Add(this.txt_Kilo);
             this.Controls.Add(this.txt_Yas);
             this.Controls.Add(this.txt_Soyad);
             this.Controls.Add(this.txt_Ad);
             this.Controls.Add(this.txt_Tc);
             this.Controls.Add(this.lbl_ÜyelikSüresi);
-            this.Controls.Add(this.lbl_Boy);
-            this.Controls.Add(this.lbl_Kilo);
             this.Controls.Add(this.lbl_DogumTarihi);
             this.Controls.Add(this.lbl_Yas);
             this.Controls.Add(this.lbl_Soyad);
@@ -567,20 +490,13 @@
         private System.Windows.Forms.Label lbl_Soyad;
         private System.Windows.Forms.Label lbl_Yas;
         private System.Windows.Forms.Label lbl_DogumTarihi;
-        private System.Windows.Forms.Label lbl_Kilo;
-        private System.Windows.Forms.Label lbl_Boy;
         private System.Windows.Forms.Label lbl_ÜyelikSüresi;
         private System.Windows.Forms.Button btn_KayitiOlustur;
         private System.Windows.Forms.Button btn_Yenile;
-        private System.Windows.Forms.Button btn_KayıtSil;
-        private System.Windows.Forms.TextBox txt_Kayıtsil;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Toplukayıtsil;
         private System.Windows.Forms.Button btn_Ara;
         private System.Windows.Forms.TextBox txt_KayıtAra;
         private System.Windows.Forms.Label lbl_Kayıtara;
         private System.Windows.Forms.Button btn_Üyeliksüresi;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl_ÜyelikbitişHesapla;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_message;
@@ -590,12 +506,9 @@
         public System.Windows.Forms.TextBox txt_Ad;
         public System.Windows.Forms.TextBox txt_Soyad;
         public System.Windows.Forms.TextBox txt_Yas;
-        public System.Windows.Forms.TextBox txt_Kilo;
-        public System.Windows.Forms.TextBox txt_Boy;
         public System.Windows.Forms.DateTimePicker dateTime_DogumTarihi;
         public System.Windows.Forms.DataGridView datagrid_ÜyeBilgileri;
         public System.Windows.Forms.DateTimePicker dateTime_Uyelikbaslangıç;
-        public System.Windows.Forms.DateTimePicker dateTime_Uyeliksüresibitis;
         private System.Windows.Forms.Button btn_Güncelle;
         private System.Windows.Forms.ComboBox combo_Cinsiyet;
         private System.Windows.Forms.Label lbl_Cinsiyet;
@@ -605,6 +518,9 @@
         private System.Windows.Forms.Label lbl_Adres;
         public System.Windows.Forms.TextBox txt_Telno;
         private System.Windows.Forms.Label lbl_Telno;
+        private System.Windows.Forms.Label lbl_UyelıkPaketi;
+        private System.Windows.Forms.ComboBox comboBox_Paket;
+        private System.Windows.Forms.Button btn_MenuyeDon;
     }
 }
 

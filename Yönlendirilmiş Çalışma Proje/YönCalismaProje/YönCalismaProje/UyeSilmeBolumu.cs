@@ -59,7 +59,29 @@ namespace YönCalismaProje
             Baglanti.Close();
         }
 
-        private void btn_Sil_Click(object sender, EventArgs e)
+     
+
+      
+        private void btn_MenuyeDon_Click(object sender, EventArgs e)
+        {
+            Menu MenuSayfasi = new Menu();
+            MenuSayfasi.Show();
+            this.Hide();
+        }
+
+        private void btn_TopluKayıtSil_Click_1(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow drow in dataGridUyeSilme.SelectedRows)  //Seçili Satırları Silme
+            {
+                int No = Convert.ToInt32(drow.Cells[0].Value);
+                SecerekSil(No);
+                MessageBox.Show("Kayıt Başarıyla Silindi");
+                ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
+
+            }
+        }
+
+        private void btn_Sil_Click_1(object sender, EventArgs e)
         {
 
             if (txt_Kayıtsil.Text == "")
@@ -70,25 +92,13 @@ namespace YönCalismaProje
             else
             {
                 Baglanti.Open();
-                SqlCommand Komut2 = new SqlCommand("DELETE  FROM Yön_Calismaproje where id =@id", Baglanti);            
+                SqlCommand Komut2 = new SqlCommand("DELETE  FROM Yön_Calismaproje where id =@id", Baglanti);
                 Komut2.Parameters.AddWithValue("@id", txt_Kayıtsil.Text);
                 Komut2.ExecuteNonQuery();
                 MessageBox.Show(txt_Kayıtsil.Text + " Kayıt başarıyla silindi");
                 ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
 
                 Baglanti.Close();
-
-            }
-        }
-
-        private void btn_TopluKayıtSil_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow drow in dataGridUyeSilme.SelectedRows)  //Seçili Satırları Silme
-            {
-                int No = Convert.ToInt32(drow.Cells[0].Value);
-                SecerekSil(No);
-                MessageBox.Show("Kayıt Başarıyla Silindi");
-                ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
 
             }
         }

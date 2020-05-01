@@ -12,13 +12,18 @@ namespace YönCalismaProje
 {
     public partial class YoneticiOlustur : Form
     {
-        SqlConnection baglanti = new SqlConnection("Data Source = localhost; Initial Catalog = Yon_Calismaproje; Integrated Security = True");
         public YoneticiOlustur()
         {
             InitializeComponent();
         }
+        SqlConnection baglanti = new SqlConnection("Data Source = localhost; Initial Catalog = Yon_Calismaproje; Integrated Security = True");
+        private void YonneticiOlustur_Load(object sender, EventArgs e)
+        {
 
-        private void btn_KayıtOlustur_Click(object sender, EventArgs e)
+        }
+       
+
+        private void btn_YoneticiOlustur_Click_1(object sender, EventArgs e)
         {
             if (txt_Sifre.Text == txt_SifreTekrar.Text)
             {
@@ -28,7 +33,7 @@ namespace YönCalismaProje
                 MessageBox.Show("Tebrikler! Başarılı bir şekilde Kayıt oldunuz. ");
                 komut.Parameters.AddWithValue("@Kullanici_Adi", txt_KullaniciAdi.Text);
                 komut.Parameters.AddWithValue("@Kullanici_Sifre", txt_Sifre.Text);
-                GirisSayfasi Giris_sayfasi = new GirisSayfasi();
+                GİrisSayfasi Giris_sayfasi = new GİrisSayfasi();
                 Giris_sayfasi.sifre = txt_Sifre.Text;
                 Giris_sayfasi.kullanici = txt_KullaniciAdi.Text;
                 Giris_sayfasi.Show();
@@ -43,5 +48,4 @@ namespace YönCalismaProje
 
         }
     }
-    }
-
+}

@@ -21,15 +21,21 @@ namespace YönCalismaProje
        
         private void OlcumOlustur_Load(object sender, EventArgs e)
         {
+            lbl_Programsurehesapla.Visible = false;
+            dateTime_Programbaslangic.Visible = false;
+            lbl_usbb.Visible = false;
+            lbl_usbts.Visible = false;
             lbl_usbb.Text = dateTime_Programbaslangic.Value.ToString();
-            lbl_usbts.Text = dateTime_Programbitis.Value.ToString();
+            lbl_usbts.Text = dateTime_Programbitis.Value.ToString("ddd, MMM d, yyyy"); ;
             Tablolustur();
+
+      
         }
         void Tablolustur()
         {
             SqlConnection Baglantim = new SqlConnection("Data Source = localhost; Initial Catalog = Yon_Calismaproje; Integrated Security = True");
             Baglantim.Open();
-            SqlDataAdapter sqlVericekme = new SqlDataAdapter("SELECT * from Program_Bilgileri where Program_Bilgileri.No like '" + idtut.ToString() + "%'", Baglantim);
+            SqlDataAdapter sqlVericekme = new SqlDataAdapter("SELECT No,Program_Bitis,Kilo,Boy,Su_Orani,Kas_Orani,Yag_Orani from Program_Bilgileri where Program_Bilgileri.id like '" + idtut.ToString() + "%'", Baglantim);
             DataTable sqlVerialma = new DataTable();
             sqlVericekme.Fill(sqlVerialma);
             dataGrid_Ölcüm.DataSource = sqlVerialma;
@@ -54,18 +60,14 @@ namespace YönCalismaProje
             else
             {
 
-                DateTime Programbaslangic;
-                DateTime Programbitis;
-                TimeSpan Programsurehesapla;
-
-                Programbaslangic = Convert.ToDateTime(dateTime_Programbaslangic.Value.ToShortDateString());
+           
+                DateTime Programbitis;        
                 Programbitis = Convert.ToDateTime(dateTime_Programbitis.Value.ToShortDateString());
 
-                Programsurehesapla = Programbitis - Programbaslangic;
-                lbl_Programsurehesapla.Text = (Programsurehesapla.ToString());
+              ;
 
 
-                if (lbl_Programsurehesapla.Text == "" || txt_Blgkilo.Text == "" || txt_Blgboy.Text == "" || txt_Blgsu.Text == "" || txt_Kasoranı.Text == "" || txt_Blgyagorani.Text == "")
+                if ( txt_Blgkilo.Text == "" || txt_Blgboy.Text == "" || txt_Blgsu.Text == "" || txt_Kasoranı.Text == "" || txt_Blgyagorani.Text == "")
                 {
                     MessageBox.Show("Lütfen Bütün bilgilerinizi giriniz");
                 }
@@ -73,15 +75,13 @@ namespace YönCalismaProje
                 {
                     Baglantim.Open();
 
-                    string date1 = Programbaslangic.ToString();
-                    string date2 = Programbitis.ToString();
+                  
+                    string date2 = Programbitis.ToString("ddd, MMM d, yyyy"); ;
 
-                    SqlCommand ProgramKomut = new SqlCommand("INSERT INTO Program_Bilgileri (No , Program_Baslangic , Program_Bitis , Program_KalanSure , Kilo , Boy , Su_Orani , Kas_Orani , Yag_Orani ) VALUES (@No,  @Program_Baslangic , @Program_Bitis , @Program_KalanSure , @Kilo , @Boy , @Su_Orani , @Kas_Orani , @Yag_Orani)", Baglantim);
+                    SqlCommand ProgramKomut = new SqlCommand("INSERT INTO Program_Bilgileri (id  , Program_Bitis , Kilo , Boy , Su_Orani , Kas_Orani , Yag_Orani ) VALUES (@id, @Program_Bitis  , @Kilo , @Boy , @Su_Orani , @Kas_Orani , @Yag_Orani)", Baglantim);
 
-                    ProgramKomut.Parameters.AddWithValue("@No", idtut.ToString());
-                    ProgramKomut.Parameters.AddWithValue("@Program_Baslangic", date1);
+                    ProgramKomut.Parameters.AddWithValue("@id", idtut.ToString());              
                     ProgramKomut.Parameters.AddWithValue("@Program_Bitis", date2);
-                    ProgramKomut.Parameters.AddWithValue("@Program_KalanSure", lbl_Programsurehesapla.Text);
                     ProgramKomut.Parameters.AddWithValue("@Kilo", txt_Blgkilo.Text);
                     ProgramKomut.Parameters.AddWithValue("@Boy", txt_Blgboy.Text);
                     ProgramKomut.Parameters.AddWithValue("@Su_Orani", txt_Blgsu.Text);
@@ -101,7 +101,38 @@ namespace YönCalismaProje
 
         private void dateTime_Programbitis_ValueChanged(object sender, EventArgs e)
         {
-            lbl_usbts.Text = dateTime_Programbitis.Value.ToString();
+            lbl_usbts.Text = dateTime_Programbitis.Value.ToString("ddd, MMM d, yyyy"); ;
         }
+
+        private void btn_Guncelle_Click(object sender, EventArgs e)
+        {
+            Baglantim.Open();
+            SqlCommand GüncelleKomut = new SqlCommand("update Program_Bilgileri set Program_Baslangic='" + dataGrid_Ölcüm.CurrentRow.Cells[1].Value.ToString() + "' ,Program_Bitis='" + dataGrid_Ölcüm.CurrentRow.Cells[2].Value.ToString() + "', Program_KalanSure='" + dataGrid_Ölcüm.CurrentRow.Cells[3].Value.ToString() + "' ,Kilo='" + dataGrid_Ölcüm.CurrentRow.Cells[4].Value.ToString() + "'  ,Boy='" + dataGrid_Ölcüm.CurrentRow.Cells[5].Value.ToString() + "',Su_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[6].Value.ToString() + "',Kas_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[7].Value.ToString() + "' ,Yag_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[8].Value.ToString() + "'where id = '" + dataGrid_Ölcüm.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
+            GüncelleKomut.ExecuteNonQuery();
+            Baglantim.Close();
+        }
+        void SecerekSil(int Kullanici_İd)
+        {
+            SqlCommand komut;
+            string sql = "DELETE FROM Program_Bilgileri WHERE No=@No";
+            komut = new SqlCommand(sql, Baglantim);
+            komut.Parameters.AddWithValue("@No", Kullanici_İd);
+            Baglantim.Open();
+            komut.ExecuteNonQuery();
+            Baglantim.Close();
+        }
+        private void btn_Sil_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow drow in dataGrid_Ölcüm.SelectedRows)  //Seçili Satırları Silme
+            {
+                int numara = Convert.ToInt32(drow.Cells[0].Value);
+                SecerekSil(numara);
+
+            }
+            Tablolustur();
+        }
+
     }
 }
+      
+       

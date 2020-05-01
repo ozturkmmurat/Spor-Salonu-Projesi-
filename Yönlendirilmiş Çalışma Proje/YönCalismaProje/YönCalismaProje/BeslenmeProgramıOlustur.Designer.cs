@@ -45,6 +45,8 @@
             this.lbl_BlgSoyad = new System.Windows.Forms.Label();
             this.lbl_Programsurehesapla = new System.Windows.Forms.Label();
             this.btn_Sil = new System.Windows.Forms.Button();
+            this.btn_Guncelle = new System.Windows.Forms.Button();
+            this.lbl_Programbitis = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBeslenme)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             this.btn_Beslenmeprog.BackColor = System.Drawing.Color.White;
             this.btn_Beslenmeprog.Image = ((System.Drawing.Image)(resources.GetObject("btn_Beslenmeprog.Image")));
             this.btn_Beslenmeprog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Beslenmeprog.Location = new System.Drawing.Point(150, 84);
+            this.btn_Beslenmeprog.Location = new System.Drawing.Point(191, 88);
             this.btn_Beslenmeprog.Name = "btn_Beslenmeprog";
             this.btn_Beslenmeprog.Size = new System.Drawing.Size(132, 26);
             this.btn_Beslenmeprog.TabIndex = 39;
@@ -73,7 +75,7 @@
             // 
             this.lbl_BeslenmeProg.AutoSize = true;
             this.lbl_BeslenmeProg.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_BeslenmeProg.Location = new System.Drawing.Point(15, 128);
+            this.lbl_BeslenmeProg.Location = new System.Drawing.Point(-1, 130);
             this.lbl_BeslenmeProg.Name = "lbl_BeslenmeProg";
             this.lbl_BeslenmeProg.Size = new System.Drawing.Size(156, 19);
             this.lbl_BeslenmeProg.TabIndex = 42;
@@ -90,9 +92,9 @@
             // dataGridBeslenme
             // 
             this.dataGridBeslenme.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridBeslenme.Location = new System.Drawing.Point(184, 160);
+            this.dataGridBeslenme.Location = new System.Drawing.Point(184, 151);
             this.dataGridBeslenme.Name = "dataGridBeslenme";
-            this.dataGridBeslenme.Size = new System.Drawing.Size(761, 243);
+            this.dataGridBeslenme.Size = new System.Drawing.Size(761, 252);
             this.dataGridBeslenme.TabIndex = 43;
             this.dataGridBeslenme.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -101,7 +103,7 @@
             this.btn_Olustur.BackColor = System.Drawing.Color.White;
             this.btn_Olustur.Image = ((System.Drawing.Image)(resources.GetObject("btn_Olustur.Image")));
             this.btn_Olustur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Olustur.Location = new System.Drawing.Point(510, 84);
+            this.btn_Olustur.Location = new System.Drawing.Point(325, 88);
             this.btn_Olustur.Name = "btn_Olustur";
             this.btn_Olustur.Size = new System.Drawing.Size(128, 26);
             this.btn_Olustur.TabIndex = 44;
@@ -130,7 +132,7 @@
             // 
             // dateTime_Programbitis
             // 
-            this.dateTime_Programbitis.Location = new System.Drawing.Point(293, 114);
+            this.dateTime_Programbitis.Location = new System.Drawing.Point(341, 13);
             this.dateTime_Programbitis.Name = "dateTime_Programbitis";
             this.dateTime_Programbitis.Size = new System.Drawing.Size(200, 20);
             this.dateTime_Programbitis.TabIndex = 50;
@@ -138,7 +140,7 @@
             // 
             // dateTime_Programbaslangic
             // 
-            this.dateTime_Programbaslangic.Location = new System.Drawing.Point(293, 86);
+            this.dateTime_Programbaslangic.Location = new System.Drawing.Point(714, 128);
             this.dateTime_Programbaslangic.Name = "dateTime_Programbaslangic";
             this.dateTime_Programbaslangic.Size = new System.Drawing.Size(200, 20);
             this.dateTime_Programbaslangic.TabIndex = 49;
@@ -166,18 +168,20 @@
             // lbl_blgAd
             // 
             this.lbl_blgAd.AutoSize = true;
-            this.lbl_blgAd.Location = new System.Drawing.Point(98, 17);
+            this.lbl_blgAd.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_blgAd.Location = new System.Drawing.Point(97, 11);
             this.lbl_blgAd.Name = "lbl_blgAd";
-            this.lbl_blgAd.Size = new System.Drawing.Size(35, 13);
+            this.lbl_blgAd.Size = new System.Drawing.Size(50, 19);
             this.lbl_blgAd.TabIndex = 53;
             this.lbl_blgAd.Text = "label1";
             // 
             // lbl_BlgSoyad
             // 
             this.lbl_BlgSoyad.AutoSize = true;
-            this.lbl_BlgSoyad.Location = new System.Drawing.Point(98, 46);
+            this.lbl_BlgSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_BlgSoyad.Location = new System.Drawing.Point(98, 44);
             this.lbl_BlgSoyad.Name = "lbl_BlgSoyad";
-            this.lbl_BlgSoyad.Size = new System.Drawing.Size(35, 13);
+            this.lbl_BlgSoyad.Size = new System.Drawing.Size(51, 16);
             this.lbl_BlgSoyad.TabIndex = 54;
             this.lbl_BlgSoyad.Text = "label1";
             // 
@@ -196,7 +200,7 @@
             this.btn_Sil.BackColor = System.Drawing.Color.White;
             this.btn_Sil.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sil.Image")));
             this.btn_Sil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sil.Location = new System.Drawing.Point(510, 113);
+            this.btn_Sil.Location = new System.Drawing.Point(325, 122);
             this.btn_Sil.Name = "btn_Sil";
             this.btn_Sil.Size = new System.Drawing.Size(128, 26);
             this.btn_Sil.TabIndex = 57;
@@ -206,11 +210,38 @@
             this.btn_Sil.UseVisualStyleBackColor = false;
             this.btn_Sil.Click += new System.EventHandler(this.btn_Sil_Click);
             // 
+            // btn_Guncelle
+            // 
+            this.btn_Guncelle.BackColor = System.Drawing.Color.White;
+            this.btn_Guncelle.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guncelle.Image")));
+            this.btn_Guncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Guncelle.Location = new System.Drawing.Point(191, 122);
+            this.btn_Guncelle.Name = "btn_Guncelle";
+            this.btn_Guncelle.Size = new System.Drawing.Size(128, 26);
+            this.btn_Guncelle.TabIndex = 71;
+            this.btn_Guncelle.Text = "Güncelle";
+            this.btn_Guncelle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Guncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Guncelle.UseVisualStyleBackColor = false;
+            this.btn_Guncelle.Click += new System.EventHandler(this.btn_Guncelle_Click);
+            // 
+            // lbl_Programbitis
+            // 
+            this.lbl_Programbitis.AutoSize = true;
+            this.lbl_Programbitis.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_Programbitis.Location = new System.Drawing.Point(161, 11);
+            this.lbl_Programbitis.Name = "lbl_Programbitis";
+            this.lbl_Programbitis.Size = new System.Drawing.Size(174, 22);
+            this.lbl_Programbitis.TabIndex = 72;
+            this.lbl_Programbitis.Text = "Program Bitiş Tarihi";
+            // 
             // BeslenmeProgramıOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 406);
+            this.Controls.Add(this.lbl_Programbitis);
+            this.Controls.Add(this.btn_Guncelle);
             this.Controls.Add(this.btn_Sil);
             this.Controls.Add(this.lbl_Programsurehesapla);
             this.Controls.Add(this.lbl_BlgSoyad);
@@ -254,5 +285,7 @@
         public System.Windows.Forms.Label lbl_BlgSoyad;
         private System.Windows.Forms.Label lbl_Programsurehesapla;
         private System.Windows.Forms.Button btn_Sil;
+        private System.Windows.Forms.Button btn_Guncelle;
+        private System.Windows.Forms.Label lbl_Programbitis;
     }
 }
