@@ -38,7 +38,7 @@ namespace YönCalismaProje
 
             SqlConnection Baglantim = new SqlConnection("Data Source = localhost; Initial Catalog = Yon_Calismaproje; Integrated Security = True");
             Baglantim.Open();
-            SqlDataAdapter sqlVericekme = new SqlDataAdapter("SELECT No,Program_Baslangic,Program_Bitis,Program_Kalansure,Beslenme_Programi from Beslenme_Programı_tbl where Beslenme_Programı_tbl.id like '" + idtut.ToString() + "%'", Baglantim);
+            SqlDataAdapter sqlVericekme = new SqlDataAdapter("SELECT No,Beslenme_Gun,Program_Baslangic,Program_Bitis,Program_Kalansure,Beslenme_Programi from Beslenme_Programı_tbl where Beslenme_Programı_tbl.id like '" + idtut.ToString() + "%'", Baglantim);
             DataTable sqlVerialma = new DataTable();
             sqlVericekme.Fill(sqlVerialma);
             dataGridBeslenme.DataSource = sqlVerialma;
@@ -51,10 +51,11 @@ namespace YönCalismaProje
 
         private void btn_Beslenmeprog_Click(object sender, EventArgs e)
         {
-            if (txt_Beslenmeekle.Text == "" || txt_Beslenmeekle.Text == null)
+            if (txt_Beslenmeekle.Text == "" || txt_Beslenmeekle.Text == null )
             {
                 MessageBox.Show("Beslenme programı listesine boş bilgi ekleyemezsiniz !", "Uyarı");
             }
+            
             else
             {
                 List_Beslenmeprogrami.Items.Add(txt_Beslenmeekle.Text);
@@ -93,10 +94,20 @@ namespace YönCalismaProje
                 {
 
 
-                    string sql = "INSERT  INTO Beslenme_Programı_tbl (id,Program_Baslangic,Program_Bitis,Program_Kalansure,Beslenme_Programi) VALUES (@id,@Program_Baslangic,@Program_Bitis,@Program_Kalansure,@Beslenme_Programi)";
+                    string sql = "INSERT  INTO Beslenme_Programı_tbl (id,Beslenme_Gun,Program_Baslangic,Program_Bitis,Program_Kalansure,Beslenme_Programi) VALUES (@id,@Beslenme_Gun,@Program_Baslangic,@Program_Bitis,@Program_Kalansure,@Beslenme_Programi)";
                     string date1 = dateTime_Programbaslangic.Value.ToString("ddd, MMM d, yyyy"); ;
                     string date2 = dateTime_Programbitis.Value.ToString("ddd, MMM d, yyyy"); ;
+                   
 
+                    string sporProgrami = "";
+                    string beslenmeProgrami = "";
+                  
+                    int x = 0;
+                    foreach (string deneme in List_Beslenmeprogrami.Items)
+                    {
+                        beslenmeProgrami += List_Beslenmeprogrami.Items[x] + ",";
+                        x++;
+                    }
 
                     SqlCommand komut2;
                     string beslenmeDeneme;
@@ -111,22 +122,32 @@ namespace YönCalismaProje
 
                     Programsurehesapla = Programbitis - Programbaslangic;
                     lbl_Programsurehesapla.Text = (Programsurehesapla.ToString());
-                    foreach (string program in List_Beslenmeprogrami.Items)
+
+                    if (comboBox_Gun.Text == "")
+                    {
+                        MessageBox.Show("Lütfen Programın Gün tekrarını seçiniz");
+                    }
+                    else
                     {
                         komut2 = new SqlCommand(sql, Baglantim);
                         komut2.Parameters.AddWithValue("id", idtut.ToString());
+                        komut2.Parameters.AddWithValue("@Beslenme_Gun", comboBox_Gun.Text);
                         komut2.Parameters.AddWithValue("Program_Baslangic", date1);
                         komut2.Parameters.AddWithValue("Program_Bitis", date2);
-                        komut2.Parameters.AddWithValue("@Program_Kalansure", lbl_Programsurehesapla.Text);                    
-                        komut2.Parameters.AddWithValue("@Beslenme_Programi", program);
+                        komut2.Parameters.AddWithValue("@Program_Kalansure", lbl_Programsurehesapla.Text);
+                        komut2.Parameters.AddWithValue("@Beslenme_Programi", beslenmeProgrami);
                         Baglantim.Open();
                         komut2.ExecuteNonQuery();
                         Baglantim.Close();
 
-
+                        MessageBox.Show("Kayıt Eklendi");
                     }
+                       
+                    
 
-                    MessageBox.Show("Kayıt Eklendi");
+                   
+
+                  
                 }
                 else
                 {

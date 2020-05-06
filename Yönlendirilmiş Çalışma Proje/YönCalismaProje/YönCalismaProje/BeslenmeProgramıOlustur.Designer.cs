@@ -47,6 +47,8 @@
             this.btn_Sil = new System.Windows.Forms.Button();
             this.btn_Guncelle = new System.Windows.Forms.Button();
             this.lbl_Programbitis = new System.Windows.Forms.Label();
+            this.comboBox_Gun = new System.Windows.Forms.ComboBox();
+            this.lbl_Gün = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBeslenme)).BeginInit();
             this.SuspendLayout();
             // 
@@ -235,11 +237,36 @@
             this.lbl_Programbitis.TabIndex = 72;
             this.lbl_Programbitis.Text = "Program Bitiş Tarihi";
             // 
+            // comboBox_Gun
+            // 
+            this.comboBox_Gun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Gun.FormattingEnabled = true;
+            this.comboBox_Gun.Items.AddRange(new object[] {
+            "Birinci Gün",
+            "İkinci Gün",
+            "Üçüncü Gün"});
+            this.comboBox_Gun.Location = new System.Drawing.Point(341, 40);
+            this.comboBox_Gun.Name = "comboBox_Gun";
+            this.comboBox_Gun.Size = new System.Drawing.Size(200, 21);
+            this.comboBox_Gun.TabIndex = 73;
+            // 
+            // lbl_Gün
+            // 
+            this.lbl_Gün.AutoSize = true;
+            this.lbl_Gün.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_Gün.Location = new System.Drawing.Point(161, 40);
+            this.lbl_Gün.Name = "lbl_Gün";
+            this.lbl_Gün.Size = new System.Drawing.Size(124, 22);
+            this.lbl_Gün.TabIndex = 74;
+            this.lbl_Gün.Text = "Beslenme Gün";
+            // 
             // BeslenmeProgramıOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 406);
+            this.Controls.Add(this.lbl_Gün);
+            this.Controls.Add(this.comboBox_Gun);
             this.Controls.Add(this.lbl_Programbitis);
             this.Controls.Add(this.btn_Guncelle);
             this.Controls.Add(this.btn_Sil);
@@ -287,5 +314,7 @@
         private System.Windows.Forms.Button btn_Sil;
         private System.Windows.Forms.Button btn_Guncelle;
         private System.Windows.Forms.Label lbl_Programbitis;
+        private System.Windows.Forms.ComboBox comboBox_Gun;
+        private System.Windows.Forms.Label lbl_Gün;
     }
 }
