@@ -68,7 +68,7 @@
             this.btn_Sporprog.Name = "btn_Sporprog";
             this.btn_Sporprog.Size = new System.Drawing.Size(131, 27);
             this.btn_Sporprog.TabIndex = 38;
-            this.btn_Sporprog.Text = "Spor Programı";
+            this.btn_Sporprog.Text = "Listeye Ekle";
             this.btn_Sporprog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Sporprog.UseVisualStyleBackColor = false;
             this.btn_Sporprog.Click += new System.EventHandler(this.btn_Sporprog_Click);
@@ -116,7 +116,7 @@
             this.btn_Sil.BackColor = System.Drawing.Color.White;
             this.btn_Sil.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sil.Image")));
             this.btn_Sil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sil.Location = new System.Drawing.Point(294, 76);
+            this.btn_Sil.Location = new System.Drawing.Point(294, 74);
             this.btn_Sil.Name = "btn_Sil";
             this.btn_Sil.Size = new System.Drawing.Size(128, 26);
             this.btn_Sil.TabIndex = 65;

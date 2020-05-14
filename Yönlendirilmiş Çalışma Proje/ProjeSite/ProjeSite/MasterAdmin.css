@@ -1,0 +1,53 @@
+﻿
+
+body {
+    font: 14px/1 "Segoe UI", Roboto, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.74);
+    background: #13b657b7;
+}
+
+
+
+h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
+    color: #ffface;
+}
+
+
+
+main {
+    min-width: 320px;
+    max-width: 70%;
+    padding: 50px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+    label:hover {
+        color: #888;
+        cursor: pointer;
+    }
+
+input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #fff;
+}

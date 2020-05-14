@@ -66,17 +66,31 @@ namespace YönCalismaProje
 
 
 
-
+        DateTime lbl_usbl2;
+        DateTime lbl_usbb2;
         public void btn_KayitiOlustur_Click(object sender, EventArgs e)
         {
-
+            int GünSüresiniTut;
             string Tc = txt_Tc.Text;
+           
             //Int64 test = Convert.ToInt64(txt_Tc.ToString());
-            DateTime lbl_usbl2 = Convert.ToDateTime(lbl_usbl.Text);
-            DateTime lbl_usbb2 = Convert.ToDateTime(lbl_usbb.Text);
-            if (lbl_usbl.Text == lbl_usbb.Text )
+            if (comboBox_Paket.Text == "")
             {
-                MessageBox.Show  ("Başlangıç tarihi ile bitiş tarihi aynı olamaz.");
+                MessageBox.Show("Lütfen bir paket seçiniz");
+            }
+            else
+            {
+                lbl_usbl2 = Convert.ToDateTime(lbl_usbl.Text);
+                lbl_usbb2 = Convert.ToDateTime(lbl_usbb.Text);
+            }
+            
+
+          
+
+            
+            if (lbl_usbl.Text == lbl_usbb.Text)
+            {
+                MessageBox.Show("Başlangıç tarihi ile bitiş tarihi aynı olamaz.");
             }
 
 
@@ -86,12 +100,12 @@ namespace YönCalismaProje
 
                 MessageBox.Show("Bitiş tarihi Başlangıç tarihinden daha küçük olamaz", "Uyarı");
             }
-            else if ((lbl_ÜyelikbitişHesapla.Text)=="01.00:00:00")
+            else if ((lbl_ÜyelikbitişHesapla.Text) == "01.00:00:00")
             {
                 lbl_ÜyelikbitişHesapla.Text = "0";
             }
 
-           else if(comboBox_Paket.Text=="5 GÜNLÜK")
+            else if (comboBox_Paket.Text == "5 GÜNLÜK")
             {
                 DateTime Uyebaslangic;
                 DateTime Uyebitis;
@@ -103,8 +117,9 @@ namespace YönCalismaProje
                 Dogumtarihi = Convert.ToDateTime(dateTime_DogumTarihi.Value.ToString());
                 Hesapla = Uyebitis - Uyebaslangic;
                 lbl_ÜyelikbitişHesapla.Text = (Hesapla.ToString());
+                deneme(5);
             }
-            else if(comboBox_Paket.Text=="20 GÜNLÜK")
+            else if (comboBox_Paket.Text == "20 GÜNLÜK")
             {
 
                 DateTime Uyebaslangic;
@@ -117,68 +132,83 @@ namespace YönCalismaProje
                 Dogumtarihi = Convert.ToDateTime(dateTime_DogumTarihi.Value.ToString());
                 Hesapla = Uyebitis - Uyebaslangic;
                 lbl_ÜyelikbitişHesapla.Text = (Hesapla.ToString());
+                deneme(20);
 
-             
                 //deneme = denemem.ToString;
 
-                if (txt_Tc.Text == "" || txt_Ad.Text == "" || txt_Soyad.Text == ""  || txt_Yas.Text == "" || lbl_ÜyelikbitişHesapla.Text == ""  ||txt_Tc.Text == null || txt_Ad.Text == null || txt_Soyad.Text == null || txt_Yas.Text == null || combo_Cinsiyet.Text == null || comboBox_Paket.Text=="")
-                {
-                    MessageBox.Show("Lütfen Bütün bilgilerinizi giriniz");
-                }
-                else
-                {
-                    Baglanti.Open();
 
-                    string  date1 = Uyebaslangic.ToString(("ddd, MMM d, yyyy"));
-                    string date2 = Uyebitis.ToString(("ddd, MMM d, yyyy"));
-
-                    string dtarih = Dogumtarihi.ToString("ddd, MMM d, yyyy");
-
-                    SqlCommand Komut = new SqlCommand("INSERT INTO Yön_Calismaproje ( Tc , Ad, Soyad , Yas,Dogum_Tarihi ,Uyelik_Suresibaslangic,Uyelik_Suresibitis,Uyelik_Kalansüre,Cinsiyet,E_mail,Adres,Telefon_No) VALUES (@Tc , @Ad , @Soyad ,@Yas, @Dogum_Tarihi , @Uyelik_Suresibaslangic,@Uyelik_Suresibitis,@Uyelik_Kalansüre,@Cinsiyet,@E_mail,@Adres,@Telefon_No )", Baglanti);
-                    //int id = Convert.ToInt32(drow.Cells[0].Value);
-
-
-                    //DateTime lbl_usbb2 = Convert.ToDateTime(lbl_usbb.Text);
-                    //int Tc = Convert.ToInt64(txt_Tc.Text);
-                    Komut.Parameters.AddWithValue("@Tc", Tc);
-                    Komut.Parameters.AddWithValue("@Ad", txt_Ad.Text);
-                    Komut.Parameters.AddWithValue("@Soyad", txt_Soyad.Text);
-                    Komut.Parameters.AddWithValue("@Yas", txt_Yas.Text);
-                    Komut.Parameters.AddWithValue("@Dogum_Tarihi", dtarih);              
-                    Komut.Parameters.AddWithValue("@Uyelik_Suresibaslangic", date1);
-                    Komut.Parameters.AddWithValue("@Uyelik_Suresibitis", date2);
-                    Komut.Parameters.AddWithValue("@Uyelik_Kalansüre", lbl_ÜyelikbitişHesapla.Text);
-                    Komut.Parameters.AddWithValue("@Cinsiyet", combo_Cinsiyet.Text);
-                    Komut.Parameters.AddWithValue("@E_mail", txt_Email.Text);
-                    Komut.Parameters.AddWithValue("@Adres", txt_Adres.Text);
-                    Komut.Parameters.AddWithValue("Telefon_No", txt_Telno.Text);
-     
-                    Komut.ExecuteNonQuery();
-
-                    ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
-                 ÜyeBilgileri Üyebilgileri = new ÜyeBilgileri();
-                    Üyebilgileri.lbl_Blgad.Text = txt_Ad.Text;
-                    Üyebilgileri.lbl_Blgsoyad.Text = txt_Soyad.Text;
-                    Üyebilgileri.lbl_Blgüyeliksüresibaslangıc.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[8].Value.ToString();
-                    Üyebilgileri.lbl_Blgüyeliksüresibitis.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[9].Value.ToString();
-                    Üyebilgileri.lbl_Blgid.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[0].Value.ToString();
-                    //ÜyeBilgileri Üyebilgileri = new ÜyeBilgileri();
-                   
-                    Üyebilgileri.Show();
-                   
-                    Baglanti.Close();
-
-                }
-
-              
-               
-                //this.Hide();
 
             }
 
         }
+        public void deneme(int SüreyiYakala)
+        {
+            string Tc = txt_Tc.Text;
+            DateTime Uyebaslangic;
+            DateTime Uyebitis;
+            DateTime Dogumtarihi;
+            DateTime ileriTarih = dateTime_Uyelikbaslangıç.Value.AddDays(SüreyiYakala);
+            Uyebaslangic = Convert.ToDateTime(dateTime_Uyelikbaslangıç.Value.ToShortDateString());
+            Uyebitis = Convert.ToDateTime(ileriTarih.ToShortDateString());
+            Dogumtarihi = Convert.ToDateTime(dateTime_DogumTarihi.Value.ToString());
 
-        private void datagrid_ÜyeBilgileri_CellContentClick(object sender, DataGridViewCellEventArgs e)
+            if (txt_Tc.Text == "" || txt_Ad.Text == "" || txt_Soyad.Text == "" || txt_Yas.Text == "" || lbl_ÜyelikbitişHesapla.Text == "" || txt_Tc.Text == null || txt_Ad.Text == null || txt_Soyad.Text == null || txt_Yas.Text == null || combo_Cinsiyet.Text == null || comboBox_Paket.Text == "")
+            {
+                MessageBox.Show("Lütfen Bütün bilgilerinizi giriniz");
+            }
+            else
+            {
+                Baglanti.Open();
+
+                string date1 = Uyebaslangic.ToString(("ddd, MMM d, yyyy"));
+                string date2 = Uyebitis.ToString(("ddd, MMM d, yyyy"));
+
+                string dtarih = Dogumtarihi.ToString("ddd, MMM d, yyyy");
+
+                SqlCommand Komut = new SqlCommand("INSERT INTO Yön_Calismaproje ( Tc , Ad, Soyad , Yas,Dogum_Tarihi ,Uyelik_Suresibaslangic,Uyelik_Suresibitis,Uyelik_Kalansüre,Cinsiyet,E_mail,Adres,Telefon_No) VALUES (@Tc , @Ad , @Soyad ,@Yas, @Dogum_Tarihi , @Uyelik_Suresibaslangic,@Uyelik_Suresibitis,@Uyelik_Kalansüre,@Cinsiyet,@E_mail,@Adres,@Telefon_No )", Baglanti);
+                //int id = Convert.ToInt32(drow.Cells[0].Value);
+
+
+                //DateTime lbl_usbb2 = Convert.ToDateTime(lbl_usbb.Text);
+                //int Tc = Convert.ToInt64(txt_Tc.Text);
+                Komut.Parameters.AddWithValue("@Tc", Tc);
+                Komut.Parameters.AddWithValue("@Ad", txt_Ad.Text);
+                Komut.Parameters.AddWithValue("@Soyad", txt_Soyad.Text);
+                Komut.Parameters.AddWithValue("@Yas", txt_Yas.Text);
+                Komut.Parameters.AddWithValue("@Dogum_Tarihi", dtarih);
+                Komut.Parameters.AddWithValue("@Uyelik_Suresibaslangic", date1);
+                Komut.Parameters.AddWithValue("@Uyelik_Suresibitis", date2);
+                Komut.Parameters.AddWithValue("@Uyelik_Kalansüre", lbl_ÜyelikbitişHesapla.Text);
+                Komut.Parameters.AddWithValue("@Cinsiyet", combo_Cinsiyet.Text);
+                Komut.Parameters.AddWithValue("@E_mail", txt_Email.Text);
+                Komut.Parameters.AddWithValue("@Adres", txt_Adres.Text);
+                Komut.Parameters.AddWithValue("Telefon_No", txt_Telno.Text);
+
+                Komut.ExecuteNonQuery();
+
+                ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
+                ÜyeBilgileri Üyebilgileri = new ÜyeBilgileri();
+                Üyebilgileri.lbl_Blgad.Text = txt_Ad.Text;
+                Üyebilgileri.lbl_Blgsoyad.Text = txt_Soyad.Text;
+                Üyebilgileri.lbl_Blgüyeliksüresibaslangıc.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[8].Value.ToString();
+                Üyebilgileri.lbl_Blgüyeliksüresibitis.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[9].Value.ToString();
+                Üyebilgileri.lbl_Blgid.Text = datagrid_ÜyeBilgileri.CurrentRow.Cells[0].Value.ToString();
+                //ÜyeBilgileri Üyebilgileri = new ÜyeBilgileri();
+
+                Üyebilgileri.Show();
+
+                Baglanti.Close();
+
+            }
+
+
+
+            //this.Hide();
+
+        }
+    
+
+    private void datagrid_ÜyeBilgileri_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
          
             ÜyeBilgileri ÜyeBilgileri = new ÜyeBilgileri();

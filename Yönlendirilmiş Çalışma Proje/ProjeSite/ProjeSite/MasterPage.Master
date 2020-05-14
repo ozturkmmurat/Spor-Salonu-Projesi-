@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ProjeSite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title></title>
+
+    <link href="MasterPageCsss.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <header role="banner">
+  <h1>Admin Panel</h1>
+  <ul style="margin-left: 0;" class="utilities">
+    <li class="users"><a href="#">My Account</a></li>
+    <li class="logout warn"><a href="">Log Out</a></li>
+  </ul>
+</header>
+
+<nav   role="navigation">
+  <ul class="main">
+    <li class="dashboard"><a href="#">Dashboard</a></li>
+    <li class="write"><a href="#">Write Post</a></li>
+    <li class="edit"><a href="#">Edit Posts</a></li>
+    <li class="comments"><a href="#">Comments</a></li>
+    <li class="users"><a href="#">Manage Users</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+  <section class="panel important">
+    
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+    </asp:ContentPlaceHolder>
+  </section>
+  <section class="panel">
+   
+
+
+      
+</body>
+</html>

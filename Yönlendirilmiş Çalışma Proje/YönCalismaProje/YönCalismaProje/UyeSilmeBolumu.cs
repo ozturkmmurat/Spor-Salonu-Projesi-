@@ -75,10 +75,11 @@ namespace YönCalismaProje
             {
                 int No = Convert.ToInt32(drow.Cells[0].Value);
                 SecerekSil(No);
-                MessageBox.Show("Kayıt Başarıyla Silindi");
+              
                 ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
 
             }
+            MessageBox.Show("Kayıt Başarıyla Silindi");
         }
 
         private void btn_Sil_Click_1(object sender, EventArgs e)

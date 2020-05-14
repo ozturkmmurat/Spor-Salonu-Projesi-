@@ -49,6 +49,9 @@
             this.lbl_Programbitis = new System.Windows.Forms.Label();
             this.comboBox_Gun = new System.Windows.Forms.ComboBox();
             this.lbl_Gün = new System.Windows.Forms.Label();
+            this.lbl_BeslenmeOgun = new System.Windows.Forms.Label();
+            this.comboBox_BeslenmOgun = new System.Windows.Forms.ComboBox();
+            this.btn_ListTamamla = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBeslenme)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +71,7 @@
             this.btn_Beslenmeprog.Name = "btn_Beslenmeprog";
             this.btn_Beslenmeprog.Size = new System.Drawing.Size(132, 26);
             this.btn_Beslenmeprog.TabIndex = 39;
-            this.btn_Beslenmeprog.Text = "Beslenme Programı";
+            this.btn_Beslenmeprog.Text = "Listeye Ekle";
             this.btn_Beslenmeprog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Beslenmeprog.UseVisualStyleBackColor = false;
             this.btn_Beslenmeprog.Click += new System.EventHandler(this.btn_Beslenmeprog_Click);
@@ -105,7 +108,7 @@
             this.btn_Olustur.BackColor = System.Drawing.Color.White;
             this.btn_Olustur.Image = ((System.Drawing.Image)(resources.GetObject("btn_Olustur.Image")));
             this.btn_Olustur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Olustur.Location = new System.Drawing.Point(325, 88);
+            this.btn_Olustur.Location = new System.Drawing.Point(195, 122);
             this.btn_Olustur.Name = "btn_Olustur";
             this.btn_Olustur.Size = new System.Drawing.Size(128, 26);
             this.btn_Olustur.TabIndex = 44;
@@ -202,7 +205,7 @@
             this.btn_Sil.BackColor = System.Drawing.Color.White;
             this.btn_Sil.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sil.Image")));
             this.btn_Sil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Sil.Location = new System.Drawing.Point(325, 122);
+            this.btn_Sil.Location = new System.Drawing.Point(459, 119);
             this.btn_Sil.Name = "btn_Sil";
             this.btn_Sil.Size = new System.Drawing.Size(128, 26);
             this.btn_Sil.TabIndex = 57;
@@ -217,7 +220,7 @@
             this.btn_Guncelle.BackColor = System.Drawing.Color.White;
             this.btn_Guncelle.Image = ((System.Drawing.Image)(resources.GetObject("btn_Guncelle.Image")));
             this.btn_Guncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Guncelle.Location = new System.Drawing.Point(191, 122);
+            this.btn_Guncelle.Location = new System.Drawing.Point(325, 119);
             this.btn_Guncelle.Name = "btn_Guncelle";
             this.btn_Guncelle.Size = new System.Drawing.Size(128, 26);
             this.btn_Guncelle.TabIndex = 71;
@@ -260,11 +263,53 @@
             this.lbl_Gün.TabIndex = 74;
             this.lbl_Gün.Text = "Beslenme Gün";
             // 
+            // lbl_BeslenmeOgun
+            // 
+            this.lbl_BeslenmeOgun.AutoSize = true;
+            this.lbl_BeslenmeOgun.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_BeslenmeOgun.Location = new System.Drawing.Point(545, 13);
+            this.lbl_BeslenmeOgun.Name = "lbl_BeslenmeOgun";
+            this.lbl_BeslenmeOgun.Size = new System.Drawing.Size(146, 22);
+            this.lbl_BeslenmeOgun.TabIndex = 76;
+            this.lbl_BeslenmeOgun.Text = "Beslenme Öğünü";
+            // 
+            // comboBox_BeslenmOgun
+            // 
+            this.comboBox_BeslenmOgun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_BeslenmOgun.FormattingEnabled = true;
+            this.comboBox_BeslenmOgun.Items.AddRange(new object[] {
+            "Sabah Öğün",
+            "Öğlen Öğün",
+            "Ara Öğün",
+            "Akşam Öğün"});
+            this.comboBox_BeslenmOgun.Location = new System.Drawing.Point(697, 14);
+            this.comboBox_BeslenmOgun.Name = "comboBox_BeslenmOgun";
+            this.comboBox_BeslenmOgun.Size = new System.Drawing.Size(200, 21);
+            this.comboBox_BeslenmOgun.TabIndex = 75;
+            this.comboBox_BeslenmOgun.SelectedIndexChanged += new System.EventHandler(this.comboBox_BeslenmOgun_SelectedIndexChanged);
+            // 
+            // btn_ListTamamla
+            // 
+            this.btn_ListTamamla.BackColor = System.Drawing.Color.White;
+            this.btn_ListTamamla.Image = ((System.Drawing.Image)(resources.GetObject("btn_ListTamamla.Image")));
+            this.btn_ListTamamla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ListTamamla.Location = new System.Drawing.Point(325, 88);
+            this.btn_ListTamamla.Name = "btn_ListTamamla";
+            this.btn_ListTamamla.Size = new System.Drawing.Size(131, 26);
+            this.btn_ListTamamla.TabIndex = 78;
+            this.btn_ListTamamla.Text = "Listeyi Tamamla";
+            this.btn_ListTamamla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_ListTamamla.UseVisualStyleBackColor = false;
+            this.btn_ListTamamla.Click += new System.EventHandler(this.btn_ListTamamla_Click);
+            // 
             // BeslenmeProgramıOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 406);
+            this.Controls.Add(this.btn_ListTamamla);
+            this.Controls.Add(this.lbl_BeslenmeOgun);
+            this.Controls.Add(this.comboBox_BeslenmOgun);
             this.Controls.Add(this.lbl_Gün);
             this.Controls.Add(this.comboBox_Gun);
             this.Controls.Add(this.lbl_Programbitis);
@@ -316,5 +361,8 @@
         private System.Windows.Forms.Label lbl_Programbitis;
         private System.Windows.Forms.ComboBox comboBox_Gun;
         private System.Windows.Forms.Label lbl_Gün;
+        private System.Windows.Forms.Label lbl_BeslenmeOgun;
+        private System.Windows.Forms.ComboBox comboBox_BeslenmOgun;
+        private System.Windows.Forms.Button btn_ListTamamla;
     }
 }

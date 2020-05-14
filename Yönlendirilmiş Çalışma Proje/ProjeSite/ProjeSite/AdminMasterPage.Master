@@ -1,0 +1,43 @@
+﻿<%--<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="ProjeSite.AdminMasterPage" %>--%>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="AdminPanelMasterPage.css" rel="stylesheet" />
+      <link rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    </form>
+     <h1>Administrador</h1>
+  <main>
+
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1">Inicio</label>
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2">Estadísticas</label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3">Datos de acceso</label>
+
+    <input id="tab4" type="radio" name="tabs">
+    <label for="tab4">Ver tablero</label>
+
+    <input id="tab5" type="radio" name="tabs">
+    <label for="tab5">Ver módulos</label>
+
+    <input id="tab6" type="radio" name="tabs">
+    <label for="tab6">Publicidad</label>
+
+    
+
+    
+  </main>
+</body>
+</html>
