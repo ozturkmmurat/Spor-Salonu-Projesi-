@@ -106,8 +106,10 @@ namespace YönCalismaProje
 
         private void btn_Guncelle_Click(object sender, EventArgs e)
         {
+           
+
             Baglantim.Open();
-            SqlCommand GüncelleKomut = new SqlCommand("update Program_Bilgileri set Program_Baslangic='" + dataGrid_Ölcüm.CurrentRow.Cells[1].Value.ToString() + "' ,Program_Bitis='" + dataGrid_Ölcüm.CurrentRow.Cells[2].Value.ToString() + "', Program_KalanSure='" + dataGrid_Ölcüm.CurrentRow.Cells[3].Value.ToString() + "' ,Kilo='" + dataGrid_Ölcüm.CurrentRow.Cells[4].Value.ToString() + "'  ,Boy='" + dataGrid_Ölcüm.CurrentRow.Cells[5].Value.ToString() + "',Su_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[6].Value.ToString() + "',Kas_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[7].Value.ToString() + "' ,Yag_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells[8].Value.ToString() + "'where id = '" + dataGrid_Ölcüm.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
+            SqlCommand GüncelleKomut = new SqlCommand("update Program_Bilgileri set Program_Bitis='" + dataGrid_Ölcüm.CurrentRow.Cells["Program_Bitis"].Value.ToString() + "' ,Kilo='" + dataGrid_Ölcüm.CurrentRow.Cells["Kilo"].Value.ToString() + "', Boy='" + dataGrid_Ölcüm.CurrentRow.Cells["Boy"].Value.ToString() + "' ,Su_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells["Su_Orani"].Value.ToString() + "' ,Kas_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells["Kas_Orani"].Value.ToString() + "' ,Yag_Orani='" + dataGrid_Ölcüm.CurrentRow.Cells["Yag_Orani"].Value.ToString() + "'where No = '" + dataGrid_Ölcüm.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
             GüncelleKomut.ExecuteNonQuery();
             Baglantim.Close();
         }

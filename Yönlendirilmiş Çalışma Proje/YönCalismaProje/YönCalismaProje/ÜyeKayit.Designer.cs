@@ -65,6 +65,7 @@
             this.lbl_UyelıkPaketi = new System.Windows.Forms.Label();
             this.comboBox_Paket = new System.Windows.Forms.ComboBox();
             this.btn_MenuyeDon = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_ÜyeBilgileri)).BeginInit();
             this.SuspendLayout();
             // 
@@ -433,11 +434,21 @@
             this.btn_MenuyeDon.UseVisualStyleBackColor = false;
             this.btn_MenuyeDon.Click += new System.EventHandler(this.btn_MenuyeDon_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(272, 247);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 73;
+            this.label1.Text = "label1";
+            // 
             // ÜyeKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 528);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_MenuyeDon);
             this.Controls.Add(this.lbl_UyelıkPaketi);
             this.Controls.Add(this.comboBox_Paket);
@@ -521,6 +532,7 @@
         private System.Windows.Forms.Label lbl_UyelıkPaketi;
         private System.Windows.Forms.ComboBox comboBox_Paket;
         private System.Windows.Forms.Button btn_MenuyeDon;
+        private System.Windows.Forms.Label label1;
     }
 }
 

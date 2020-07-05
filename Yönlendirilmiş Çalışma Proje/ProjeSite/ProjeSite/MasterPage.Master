@@ -15,19 +15,22 @@
 <body>
   <header role="banner">
   <h1>Admin Panel</h1>
-  <ul style="margin-left: 0;" class="utilities">
+  <ul style="margin-left: 0; " class="utilities">
     <li class="users"><a href="#">My Account</a></li>
-    <li class="logout warn"><a href="">Log Out</a></li>
+    <li class="logout warn"><a style="width:100%;"  href="">Log Out</a></li>
   </ul>
 </header>
 
 <nav   role="navigation">
   <ul class="main">
-    <li class="dashboard"><a href="#">Dashboard</a></li>
-    <li class="write"><a href="#">Write Post</a></li>
-    <li class="edit"><a href="#">Edit Posts</a></li>
-    <li class="comments"><a href="#">Comments</a></li>
-    <li class="users"><a href="#">Manage Users</a></li>
+    <li class="dashboard"><a href="MasterCalisanOlustur.aspx">Çalışan Oluştur</a></li>
+    <li class="write"><a href="CalisanlarTablo.aspx">Çalışanlar Tablosu</a></li>
+    <li class="edit"><a href="AdminCalismaSaatleri">Çalışma Saatleri</a></li>
+    <li class="comments"><a href="AdminKampanyalar.aspx">Kampanya</a></li>
+    <li class="users"><a href="AktiviteTablosu.aspx">Aktivite Tablosu</a></li>
+    <li class="users"><a href="AktiviteOlustur.aspx">Aktivite Oluştur</a></li>
+   <li class="users"><a href="SalonGenelBilgiler.aspx">Hakkımızda Yazısı </a></li>
+   
   </ul>
 </nav>
 
@@ -41,7 +44,7 @@
   <section class="panel">
    
 
-
+</section>
       
 </body>
 </html>

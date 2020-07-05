@@ -29,6 +29,10 @@ namespace YönCalismaProje
 
         private void btn_GirisYap_Click_1(object sender, EventArgs e)
         {
+
+          
+
+
             SqlCommand komut = new SqlCommand();
             komut.Connection = baglanti;
             baglanti.Open();

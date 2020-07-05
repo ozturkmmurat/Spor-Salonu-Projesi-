@@ -58,3 +58,24 @@ C:\Users\Batuhan\Desktop\Yön 8.Hafta\8.HAFTA\YönCalismaProje\YönCalismaProje\
 C:\Users\Batuhan\Desktop\Yön 8.Hafta\8.HAFTA\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.pdb
 C:\Users\Batuhan\Desktop\Yön 8.Hafta\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.GİrisSayfasi.resources
 C:\Users\Batuhan\Desktop\Yön 8.Hafta\8.HAFTA\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.YoneticiOlustur.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.exe.config
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.exe
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\bin\Debug\YönCalismaProje.pdb
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.csprojResolveAssemblyReference.cache
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.BeslenmeProgramı.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.BeslenmeProgramıOlustur.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.GİrisSayfasi.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.Menu.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.OlcumOlustur.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.OlcumSayfasi.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.Olcumİstatistik.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.Properties.Resources.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.SporProgramı.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.SporProgramıOlustur.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.UyeSilmeBolumu.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.YoneticiOlustur.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.ÜyeBilgileri.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.ÜyeKayit.resources
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.csproj.GenerateResource.Cache
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.exe
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\YönCalismaProje\YönCalismaProje\obj\Debug\YönCalismaProje.pdb

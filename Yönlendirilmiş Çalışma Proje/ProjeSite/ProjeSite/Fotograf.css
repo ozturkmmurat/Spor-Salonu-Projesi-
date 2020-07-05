@@ -75,11 +75,12 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url("");
+    background-image: url('');
     background-color: white;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
     .js--image-preview::after {

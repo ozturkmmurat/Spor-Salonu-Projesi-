@@ -50,18 +50,18 @@ namespace YönCalismaProje
         }
         void SecerekSil(int Kullanici_İd)
         {
-            string Sil = "DELETE FROM Yön_Calismaproje WHERE id=@id";
-            ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
-            SqlCommand Komut = new SqlCommand(Sil, Baglanti);
-            Komut.Parameters.AddWithValue("@id", Kullanici_İd);
+            SqlCommand komut;
+            string sql = "DELETE FROM Yön_Calismaproje WHERE id=@id";
+            komut = new SqlCommand(sql, Baglanti);
+            komut.Parameters.AddWithValue("@id", Kullanici_İd);
             Baglanti.Open();
-            Komut.ExecuteNonQuery();
+            komut.ExecuteNonQuery();
             Baglanti.Close();
         }
 
-     
 
-      
+
+
         private void btn_MenuyeDon_Click(object sender, EventArgs e)
         {
             Menu MenuSayfasi = new Menu();
@@ -73,13 +73,12 @@ namespace YönCalismaProje
         {
             foreach (DataGridViewRow drow in dataGridUyeSilme.SelectedRows)  //Seçili Satırları Silme
             {
-                int No = Convert.ToInt32(drow.Cells[0].Value);
-                SecerekSil(No);
-              
-                ListeyiYenileme("select * from Yön_CalismaProje ORDER BY id DESC");
+                int numara = Convert.ToInt32(drow.Cells[0].Value);
+                SecerekSil(numara);
 
             }
-            MessageBox.Show("Kayıt Başarıyla Silindi");
+            Tablolustur();
+          
         }
 
         private void btn_Sil_Click_1(object sender, EventArgs e)

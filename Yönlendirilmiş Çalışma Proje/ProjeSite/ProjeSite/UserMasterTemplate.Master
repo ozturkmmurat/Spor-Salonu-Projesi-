@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMasterTemplate.master.cs" Inherits="ProjeSite.UserMasterTemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <link href="MasterPageCsss.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <header role="banner">
+  <h1>User Panel</h1>
+  <ul style="margin-left: 0; " class="utilities">
+    <li class="users"><a href="#">My Account</a></li>
+    <li class="logout warn"><a style="width:100%;"  href="">Log Out</a></li>
+  </ul>
+</header>
+
+<nav   role="navigation">
+  <ul class="main">
+    <li class="dashboard"><a href="KullanıcıOlcumTablosu.aspx">Ölçüm Tablosu</a></li>
+    <li class="write"><a href="KullanıcıBeslenmeTablosu.aspx">Beslenme Tablosu</a></li>
+    <li class="edit"><a href="KullanıcıSporTablosu.aspx">Spor Programı Tablosu</a></li>
+    <li class="comments"><a href="#">Comments</a></li>
+    <li class="users"><a href="#">Manage Users</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+  <section class="panel important">
+    
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+    </asp:ContentPlaceHolder>
+  </section>
+  <section class="panel">
+   
+
+</section>
+      
+</body>
+</html>

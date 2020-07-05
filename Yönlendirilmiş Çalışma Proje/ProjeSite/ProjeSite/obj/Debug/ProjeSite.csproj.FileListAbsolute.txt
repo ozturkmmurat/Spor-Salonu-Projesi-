@@ -190,67 +190,325 @@ C:\Users\Batuhan\Desktop\SİTE ÜSTÜNDE OYNAMALAR\10.HAFTA.SİTE\ProjeSite\Proj
 C:\Users\Batuhan\Desktop\SİTE ÜSTÜNDE OYNAMALAR\10.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.csprojResolveAssemblyReference.cache
 C:\Users\Batuhan\Desktop\SİTE ÜSTÜNDE OYNAMALAR\10.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.dll
 C:\Users\Batuhan\Desktop\SİTE ÜSTÜNDE OYNAMALAR\10.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.pdb
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\ApplicationInsights.config
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\csc.exe
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\csc.exe.config
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\csc.rsp
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\csi.exe
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\csi.rsp
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\System.AppContext.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\vbc.exe
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\vbc.exe.config
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\vbc.rsp
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\ProjeSite.dll.config
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\ProjeSite.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\ProjeSite.pdb
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Antlr3.Runtime.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Newtonsoft.Json.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\System.Web.Optimization.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\WebGrease.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\System.Web.Optimization.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Antlr3.Runtime.pdb
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Newtonsoft.Json.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.xml
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\tr\System.Web.Optimization.resources.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\bin\tr\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\obj\Debug\ProjeSite.csprojResolveAssemblyReference.cache
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\obj\Debug\ProjeSite.dll
-C:\Users\Batuhan\Desktop\Site\ProjeSite\ProjeSite\obj\Debug\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ApplicationInsights.config
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.AppContext.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll.config
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\WebGrease.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.csprojResolveAssemblyReference.cache
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\10.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ApplicationInsights.config
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.AppContext.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll.config
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\WebGrease.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.csprojResolveAssemblyReference.cache
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AjaxControlToolkit.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ApplicationInsights.config
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe.config
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.rsp
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.exe
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.rsp
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.AppContext.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe.config
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.rsp
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll.config
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AjaxControlToolkit.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\WebGrease.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.pdb
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.xml
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.csprojResolveAssemblyReference.cache
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ApplicationInsights.config
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csc.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\csi.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.AppContext.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\vbc.rsp
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll.config
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\WebGrease.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\System.Web.Optimization.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Antlr3.Runtime.pdb
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Newtonsoft.Json.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.xml
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\bin\tr\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.csprojResolveAssemblyReference.cache
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yeni klasör\Site Template\11.HAFTA.SİTE\ProjeSite\ProjeSite\obj\Debug\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\ApplicationInsights.config
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\csc.exe
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\csc.exe.config
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\csc.rsp
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\csi.exe
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\csi.rsp
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\System.AppContext.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\vbc.exe
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\vbc.exe.config
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\vbc.rsp
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\ProjeSite.dll.config
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\ProjeSite.pdb
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Antlr3.Runtime.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Newtonsoft.Json.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\System.Web.Optimization.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\WebGrease.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\System.Web.Optimization.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Antlr3.Runtime.pdb
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Newtonsoft.Json.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\Microsoft.AI.Web.xml
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\bin\tr\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\obj\Debug\ProjeSite.csprojResolveAssemblyReference.cache
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\obj\Debug\ProjeSite.dll
+C:\Users\Batuhan\Desktop\Yönlendirilmiş Çalışma Site Son durum\ProjeSite\ProjeSite\obj\Debug\ProjeSite.pdb

@@ -20,7 +20,7 @@ namespace YönCalismaProje
         {
 
             SqlConnection Baglanti = new SqlConnection("Data Source = localhost; Initial Catalog = Yon_Calismaproje; Integrated Security = True");
-            SqlDataAdapter sqlVericekme = new SqlDataAdapter("select * from Yön_CalismaProje ORDER BY id DESC", Baglanti);
+            SqlDataAdapter sqlVericekme = new SqlDataAdapter("select  id,Tc,Ad,Soyad,Yas,Dogum_Tarihi,Uyelik_Suresibaslangic,Uyelik_Suresibitis,Uyelik_Kalansüre,Cinsiyet,E_mail,Adres,Telefon_No  from Yön_CalismaProje ORDER BY id DESC", Baglanti);
             DataTable sqlVerialma = new DataTable();
 
             sqlVericekme.Fill(sqlVerialma);

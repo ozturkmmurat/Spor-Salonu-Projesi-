@@ -1,0 +1,35 @@
+﻿body{
+
+}
+#Hakkındaİcon, #Aktivitelerİcon, #Etkinlikler_İcon, #Düzenle_icon, #Sil_icon, #Bilgiİconu, #Ozelliklerİcon {
+    margin-top: -5px;
+    width: 24px;
+    height: 24px;
+}
+hr {
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    width:95%;
+    margin-left:0;
+}
+.deneme {
+    float: none;
+    clear: both;
+    background: #f1f1f1;
+    margin-left:0px;
+
+    margin-top: 0px; /**/
+    margin-bottom: 0px; /**/
+    width: 95%; /*Media*/
+    height: 110px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+    border: 1px solid #82aee8;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #82aee8 inset;
+    -webkit-box-shadow: 0 1px 1px #82aee8 inset;
+    box-shadow: 0 1px 1px #82aee8 inset;
+}
+

@@ -82,7 +82,7 @@ namespace YönCalismaProje
             {
 
                 MessageBox.Show("Bitiş tarihi Başlangıç tarihinden daha küçük olamaz", "Uyarı");
-            }                else 
+            } else 
                 {
 
 
@@ -136,11 +136,17 @@ namespace YönCalismaProje
                         Baglantim.Close();
 
                         MessageBox.Show("Kayıt Eklendi");
+                   
+
                         
                     }
                 }
                 Tablolustur();
-            
+            sabahOgunu = "";
+            oglenOgunu = "";
+            araOgunu = "";
+            aksamOgunu = "";
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -178,9 +184,17 @@ namespace YönCalismaProje
         private void btn_Guncelle_Click(object sender, EventArgs e)
         {
             Baglantim.Open();
-            SqlCommand GüncelleKomut = new SqlCommand("update Beslenme_Programı_tbl set Program_Baslangic='" + dataGridBeslenme.CurrentRow.Cells[1].Value.ToString() + "' ,Program_Bitis='" + dataGridBeslenme.CurrentRow.Cells[2].Value.ToString() + "', Program_KalanSure='" + dataGridBeslenme.CurrentRow.Cells[3].Value.ToString() + "' ,Beslenme_Sabah='" + dataGridBeslenme.CurrentRow.Cells[4].Value.ToString() +"' ,Beslenme_Oglen= '"  + dataGridBeslenme.CurrentRow.Cells[5].Value.ToString() + "' ,Beslenme_AraOgun='" +dataGridBeslenme.CurrentRow.Cells[6].Value.ToString() + "' ,Beslenme_Aksam='" + dataGridBeslenme.CurrentRow.Cells[7].Value.ToString()  + "'where No = '" + dataGridBeslenme.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
-            GüncelleKomut.ExecuteNonQuery();
-            Baglantim.Close();
+            try
+            {
+                SqlCommand GüncelleKomut = new SqlCommand("update Beslenme_Programı_tbl set Program_Baslangic='" + dataGridBeslenme.CurrentRow.Cells["Program_Baslangic"].Value.ToString() + "' ,Program_Bitis='" + dataGridBeslenme.CurrentRow.Cells["Program_Bitis"].Value.ToString() + "', Program_KalanSure='" + dataGridBeslenme.CurrentRow.Cells["Program_KalanSure"].Value.ToString() + "' ,Beslenme_Sabah='" + dataGridBeslenme.CurrentRow.Cells["Beslenme_Sabah"].Value.ToString() + "' ,Beslenme_Oglen= '" + dataGridBeslenme.CurrentRow.Cells["Beslenme_Oglen"].Value.ToString() + "' ,Beslenme_AraOgun='" + dataGridBeslenme.CurrentRow.Cells["Beslenme_AraOgun"].Value.ToString() + "' ,Beslenme_Aksam='" + dataGridBeslenme.CurrentRow.Cells["Beslenme_Aksam"].Value.ToString() + "' ,Beslenme_Gun='" + dataGridBeslenme.CurrentRow.Cells["Beslenme_Gun"].Value.ToString() + "'where No = '" + dataGridBeslenme.CurrentRow.Cells[0].Value.ToString() + "'", Baglantim);
+                GüncelleKomut.ExecuteNonQuery();
+                Baglantim.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Lütfen güncellemek istediğiniz yere tıklayın");
+            }
+            
         }
 
         private void btn_ListTamamla_Click(object sender, EventArgs e)

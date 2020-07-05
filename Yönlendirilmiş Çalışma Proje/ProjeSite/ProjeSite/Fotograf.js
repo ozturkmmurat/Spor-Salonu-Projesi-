@@ -13,10 +13,10 @@
             reader = new FileReader();
 
         reader.onload = function () {
-            thumb.style.backgroundImage = 'url(' + reader.result + ')';
+            thumb.src = reader.result;
         }
         reader.readAsDataURL(file);
-        thumb.className += ' js--no-default';
+        thumb.className.src += ' js--no-default';
     }
 
     function checkType(file) {
